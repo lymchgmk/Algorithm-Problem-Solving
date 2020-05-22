@@ -1,13 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="53e2a9dc-4205-4c0c-b667-3bcff8cba4f2" name="Default Changelist" comment="" />
+    <list default="true" id="53e2a9dc-4205-4c0c-b667-3bcff8cba4f2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BJ/삼성 A형 기출 문제/16637_괄호추가하기.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BJ/삼성 A형 기출 문제/17135_캐슬 디펜스.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BJ/삼성 A형 기출 문제/17135_캐슬 디펜스.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BJ/삼성 A형 기출 문제/17136_색종이 붙이기.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BJ/삼성 A형 기출 문제/17136_색종이 붙이기.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BJ/삼성 A형 기출 문제/17136_색종이 붙이기_solve.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BJ/삼성 A형 기출 문제/17281_야구공.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BJ/삼성 A형 기출 문제/17281_야구공.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BJ/삼성 A형 기출 문제/17406_배열 돌리기4.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BJ/삼성 A형 기출 문제/17406_배열 돌리기4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BJ/삼성 A형 기출 문제/3954_Brainfuck 인터프리터.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BJ/삼성 A형 기출 문제/3954_Brainfuck 인터프리터.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BJ/삼성 SW 역량 테스트 기출 문제/12100_2048(Easy).py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BJ/삼성 SW 역량 테스트 기출 문제/12100_2048(Easy).txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BJ/삼성 SW 역량 테스트 기출 문제/14503_로봇 청소기.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BJ/삼성 SW 역량 테스트 기출 문제/14503_로봇 청소기.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BJ/삼성 SW 역량 테스트 기출 문제/17825_주사위 윷놀이.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BJ/삼성 SW 역량 테스트 기출 문제/17825_주사위 윷놀이.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1240_단순 2진 암호코드.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1240_단순 2진 암호코드.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/5185_이진수.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/5185_이진수.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/5186_이진수2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/5186_이진수2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/5188_최소합.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/5188_최소합.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/5189_전기카트.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/5189_전기카트.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/임창묵_0429.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/임창묵_0501.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BJ/16637_괄호추가하기.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BJ/16637_괄호추가하기.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../BJ/삼성 A형 기출 문제/16637_괄호추가하기.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BJ/17070_파이프옮기기.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../BJ/삼성 A형 기출 문제/17070_파이프옮기기.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BJ/17070_파이프옮기기.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../BJ/삼성 A형 기출 문제/17070_파이프옮기기.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BJ/17070_파이프옮기기_solve.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../BJ/삼성 A형 기출 문제/17070_파이프옮기기_solve.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test.txt" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
   <component name="ProjectId" id="1aKMbKtNPc6yEpZ6oDT4RnXDRDD" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -101,9 +146,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="922" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1586481077620" />
-    <state x="1132" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1586479910147">
+    <state x="1132" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1588764981432">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1132" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586479910147" />
+    <state x="1132" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588764981432" />
   </component>
 </project>

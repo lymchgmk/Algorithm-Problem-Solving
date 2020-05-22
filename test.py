@@ -1,6 +1,5 @@
-import sys
-sys.sydin=open('test.txt')
+import collections
 
-T=int(input())
-
-print(T)
+def solution(participant, completion):
+    answer = collections.Counter(participant) - collections.Counter(completion)
+    return list(answer.keys())[0]
