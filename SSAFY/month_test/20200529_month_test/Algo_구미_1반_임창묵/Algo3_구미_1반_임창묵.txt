@@ -1,0 +1,63 @@
+생각 1. 5<=N<=10 인걸 보면 bfs 사용해도 괜찮을것.
+생각 2. 출발할 수 있는 방 3곳 중 2곳을 선택하는 방법 = 3C2 = 3. 충분히 다 검토해봐도 괜찮음.
+
+// 출발지를 정하는 과정
+이중 for문을 사용해서 배열 A를 탐색, 값이 2이면 출발지에 [i, j] 저장.
+combinations를 사용해서 3곳 중 2곳을 선정.
+
+// 수도 코드
+def find_start(A):
+    start = []
+    for i in len(A):
+        for j in len(A):
+            if A[i][j] == 2:
+                start.append([i, j])
+    return start
+
+def pick_start(A):
+    start_points = combinations(find_start(A), 2)
+
+// 최소 시간을 찾는 과정
+배열 A와 같은 크기의,  [0,0]으로만 이루어진 배열 T를 만듦.
+"출발지를 정하는 과정"에서 정한 2곳의 출발지의 좌표와 같은 좌표의 T에서 상하좌우로 bfs를 사용. 단계마다 1씩 증가하는 수를 T의 해당 좌표에 저장하도록 함.
+반드시 이동해야 하는 것은 아니라 했으나 답의 조건을 사용(첫 번째 인덱스에 저장된 값과 두 번째 인덱스에 저장된 값이 모두 0이 아닌 경우)하면 상관 없음.
+그리고 이동할 곳이 없는 경우는 정지(=무시)하도록 설정.
+첫 번째 출발지에서 시작한 경우는 첫 번째 인덱스의 값에 저장, 두 번째 출발지에서 시작한 경우는 두 번째 인덱스의 값에 저장
+
+첫 번째 인덱스에 저장된 값과 두 번째 인덱스에 저장된 값이 모두 0이 아닌 경우, 두 값 중 더 큰 값을(한 명이 기다리는 경우가 있을 수 있음) 답의 후보로 등록 후,
+출발지를 바꿔서 새로 실행.
+
+구해진 답 후보 중 최소값을 답으로 정함.
+
+// 수도 코드
+def bfs(start_point, cnt):
+   global T
+   Q = deque()
+   Q에 start_point 추가.
+
+    while Q가 비어있지 않음:
+        x, y = Q.popleft()
+        x,y 기준 상하좌우 탐색
+        if T 밖으로 나가거나 벽이 아닌 경우:
+            if 상하좌우에 0인 곳이 있음:
+                T의 해당 좌표에 start_point의 순번에 맞추어 cnt 기록
+                Q에 좌표를 추가
+
+T = [[[0,0] for _ in range(len(A)] for _ in range(len(A))]
+
+for starts_point in start_points:
+    cnt = 0
+    for i in len(T):
+        for j in len(T):
+            if T[i][j] == [0, 0]:
+                cnt += 1
+                bfs(start_point, cnt)
+
+result = []
+for i in len(T):
+    for j in len(T):
+        if T[i][j][0] != 0 AND T[i][j][1] != 1:
+            result에 T[i][j][0] 랑 T[i][j][1] 중 더 큰 값 저장.
+
+answer = min(result)
+	

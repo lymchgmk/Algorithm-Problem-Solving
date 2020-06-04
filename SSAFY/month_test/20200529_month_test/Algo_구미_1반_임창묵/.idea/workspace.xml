@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c5f3627c-8429-49dd-8bc7-0eba57fecdab" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Algo1_구미_1반_임창묵.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Algo1_구미_1반_임창묵.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Algo2_구미_1반_임창묵.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Algo2_구미_1반_임창묵.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Algo3_구미_1반_임창묵.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Algo_구미_1반_임창묵.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/Algo_구미_1반_임창묵.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algo1_구미_1반_임창묵.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algo2_구미_1반_임창묵.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algo3_구미_1반_임창묵.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../SWEA/수업/1248_공통조상.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../SWEA/수업/1248_공통조상.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SWEA/수업/5174.subtree.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../SWEA/수업/5174.subtree.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../test.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../test.txt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="ProjectId" id="1cZSnX9JhYknGfALIKLN1nC66Ea" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Algo1_구미_1반_임창묵" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Algo_구미_1반_임창묵" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Algo1_구미_1반_임창묵.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.Algo1_구미_1반_임창묵" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c5f3627c-8429-49dd-8bc7-0eba57fecdab" name="Default Changelist" comment="" />
+      <created>1590734789226</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1590734789226</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="938" height="284" key="GridCell.Tab.0.bottom" timestamp="1590735472644">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="938" height="284" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590735472644" />
+    <state width="938" height="284" key="GridCell.Tab.0.center" timestamp="1590735472643">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="938" height="284" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590735472643" />
+    <state width="938" height="284" key="GridCell.Tab.0.left" timestamp="1590735472643">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="938" height="284" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590735472643" />
+    <state width="938" height="284" key="GridCell.Tab.0.right" timestamp="1590735472644">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="938" height="284" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590735472644" />
+    <state x="922" y="162" key="SettingsEditor" timestamp="1590735216079">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="922" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1590735216079" />
+    <state x="1176" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1590735045143">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1176" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590735045143" />
+  </component>
+</project>

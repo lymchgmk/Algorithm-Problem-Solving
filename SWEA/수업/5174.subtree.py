@@ -32,6 +32,7 @@ for test_case in range(1, T+1):
     for i in range(len(data)):
         if i%2==0:
             mat[data[i]].append(data[i+1])
+    print(mat)
 
     ans=len(dfs(N, mat))
     print(f'#{test_case} {ans}')

@@ -2,22 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a6b927d-dadf-40e5-9629-6659a15e4294" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Progammers/스킬 체크 이미지파일 모음/이미지 1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SWEA/A형_보충/5653_줄기세포배양.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SWEA/A형_보충/5653_줄기세포배양.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SWEA/수업/1244_최대 상금.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SWEA/수업/1244_최대 상금.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SWEA/수업/1247_최적 경로.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SWEA/수업/1247_최적 경로.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SWEA/수업/5249_최소 신장 트리.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SWEA/수업/5249_최소 신장 트리.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SWEA/수업/5251_최소 이동 거리.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SWEA/수업/5251_최소 이동 거리.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SWEA/수업/임창묵_0522.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reference/dijkstra.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reference/mst_kruskal.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Progammers/코딩테스트 연습/완전탐색/모의고사.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Progammers/코딩테스트 연습/완전탐색/소수 찾기.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Progammers/코딩테스트 연습/완전탐색/숫자 야구.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Progammers/코딩테스트 연습/정렬/H-Index.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Progammers/코딩테스트 연습/정렬/K번째수.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Progammers/코딩테스트 연습/정렬/가장 큰 수.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Progammers/코딩테스트 연습/탐욕법(Greedy)/체육복.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Progammers/코딩테스트 연습/해시/베스트앨범.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Progammers/코딩테스트 연습/해시/위장.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Progammers/코딩테스트 연습/해시/위장.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SSAFY/month_test/20200529_month_test/Algo1_구미_1반_임창묵.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SSAFY/month_test/20200529_month_test/Algo1_구미_1반_임창묵.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SSAFY/month_test/20200529_month_test/Algo2_구미_1반_임창묵.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SSAFY/month_test/20200529_month_test/Algo2_구미_1반_임창묵.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SSAFY/month_test/20200529_month_test/Algo3_구미_1반_임창묵.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SSAFY/month_test/20200529_month_test/Algo_구미_1반_임창묵.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SSAFY/month_test/20200529_month_test/Algo_구미_1반_임창묵/.idea/Algo_구미_1반_임창묵.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SSAFY/month_test/20200529_month_test/Algo_구미_1반_임창묵/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SSAFY/month_test/20200529_month_test/Algo_구미_1반_임창묵/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SSAFY/month_test/20200529_month_test/Algo_구미_1반_임창묵/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SSAFY/month_test/20200529_month_test/Algo_구미_1반_임창묵/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SSAFY/month_test/20200529_month_test/Algo_구미_1반_임창묵/Algo1_구미_1반_임창묵.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SSAFY/month_test/20200529_month_test/Algo_구미_1반_임창묵/Algo2_구미_1반_임창묵.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SSAFY/month_test/20200529_month_test/Algo_구미_1반_임창묵/Algo3_구미_1반_임창묵.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SWEA/수업/1248_공통조상.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SWEA/수업/1248_공통조상.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SWEA/수업/5174.subtree.py" beforeDir="false" afterPath="$PROJECT_DIR$/SWEA/수업/5174.subtree.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,8 +78,8 @@
       <recent name="C:\Users\lymch\OneDrive\바탕 화면\Algo_lymchgmk" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.1247_최적 경로">
-    <configuration name="1244_최대 상금" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.체육복">
+    <configuration name="소수 찾기" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Algo_lymchgmk" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -73,11 +87,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/SWEA/수업" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Progammers/코딩테스트 연습/완전탐색" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SWEA/수업/1244_최대 상금.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Progammers/코딩테스트 연습/완전탐색/소수 찾기.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -86,7 +100,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="1247_최적 경로" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="숫자 야구" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Algo_lymchgmk" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -94,11 +108,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/SWEA/수업" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Progammers/코딩테스트 연습/완전탐색" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SWEA/수업/1247_최적 경로.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Progammers/코딩테스트 연습/완전탐색/숫자 야구.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -107,7 +121,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="5249_최소 신장 트리 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="모의고사" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Algo_lymchgmk" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -115,11 +129,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/SWEA/수업" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Progammers/코딩테스트 연습/완전탐색" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SWEA/수업/5249_최소 신장 트리.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Progammers/코딩테스트 연습/완전탐색/모의고사.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -128,7 +142,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="5653_줄기세포배양" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="체육복" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Algo_lymchgmk" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -136,11 +150,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/SWEA/A형_보충" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Progammers/코딩테스트 연습/탐욕법(Greedy)" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SWEA/A형_보충/5653_줄기세포배양.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Progammers/코딩테스트 연습/탐욕법(Greedy)/체육복.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -149,7 +163,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="H-Index" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Algo_lymchgmk" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -157,11 +171,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Progammers/코딩테스트 연습/정렬" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Progammers/코딩테스트 연습/정렬/H-Index.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -172,11 +186,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.1247_최적 경로" />
-        <item itemvalue="Python.1244_최대 상금" />
-        <item itemvalue="Python.test" />
-        <item itemvalue="Python.5653_줄기세포배양" />
-        <item itemvalue="Python.5249_최소 신장 트리 (1)" />
+        <item itemvalue="Python.체육복" />
+        <item itemvalue="Python.숫자 야구" />
+        <item itemvalue="Python.소수 찾기" />
+        <item itemvalue="Python.모의고사" />
+        <item itemvalue="Python.H-Index" />
       </list>
     </recent_temporary>
   </component>
@@ -201,38 +215,38 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1186" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1590043772552" />
-    <state width="1899" height="341" key="GridCell.Tab.0.bottom" timestamp="1590652965439">
+    <state width="934" height="339" key="GridCell.Tab.0.bottom" timestamp="1591069131166">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="341" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590652965439" />
-    <state width="1899" height="341" key="GridCell.Tab.0.center" timestamp="1590652965439">
+    <state width="934" height="339" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1591069131166" />
+    <state width="934" height="339" key="GridCell.Tab.0.center" timestamp="1591069131166">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="341" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590652965439" />
-    <state width="1899" height="341" key="GridCell.Tab.0.left" timestamp="1590652965439">
+    <state width="934" height="339" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1591069131166" />
+    <state width="934" height="339" key="GridCell.Tab.0.left" timestamp="1591069131166">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="341" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590652965439" />
-    <state width="1899" height="341" key="GridCell.Tab.0.right" timestamp="1590652965439">
+    <state width="934" height="339" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1591069131166" />
+    <state width="934" height="339" key="GridCell.Tab.0.right" timestamp="1591069131166">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="341" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590652965439" />
-    <state width="1899" height="341" key="GridCell.Tab.1.bottom" timestamp="1590652965439">
+    <state width="934" height="339" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1591069131166" />
+    <state width="934" height="339" key="GridCell.Tab.1.bottom" timestamp="1591069131166">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="341" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590652965439" />
-    <state width="1899" height="341" key="GridCell.Tab.1.center" timestamp="1590652965439">
+    <state width="934" height="339" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1591069131166" />
+    <state width="934" height="339" key="GridCell.Tab.1.center" timestamp="1591069131166">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="341" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590652965439" />
-    <state width="1899" height="341" key="GridCell.Tab.1.left" timestamp="1590652965439">
+    <state width="934" height="339" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1591069131166" />
+    <state width="934" height="339" key="GridCell.Tab.1.left" timestamp="1591069131166">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="341" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590652965439" />
-    <state width="1899" height="341" key="GridCell.Tab.1.right" timestamp="1590652965439">
+    <state width="934" height="339" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1591069131166" />
+    <state width="934" height="339" key="GridCell.Tab.1.right" timestamp="1591069131166">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="341" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590652965439" />
+    <state width="934" height="339" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1591069131166" />
     <state x="922" y="162" key="SettingsEditor" timestamp="1585796952060">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -241,10 +255,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="968" height="528" key="XDebugger.FullValuePopup/0.0.1920.1040@0.0.1920.1040" timestamp="1590634593259" />
-    <state x="1164" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1590626054746">
+    <state x="1164" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1590975937328">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1164" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590626054746" />
+    <state x="1164" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590975937328" />
     <state x="1336" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1588241896674">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
