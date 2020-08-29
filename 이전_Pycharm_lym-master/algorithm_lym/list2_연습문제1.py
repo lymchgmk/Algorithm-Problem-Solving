@@ -1,0 +1,35 @@
+'''
+1 1 1 1 1
+1 0 0 0 1
+1 0 0 0 1
+1 0 0 0 1
+1 1 1 1 1
+'''
+def iswall(x, y):
+    if x < 0  or y >=5 : return True
+    if y < 0 or y >= 5 : return True
+    return False
+
+def calAbs(a, b):
+    if a-b>0: return a-b
+    else: return b-a
+
+
+arr = [[0 for _ in range(5)] for _ in range(5)]
+for i in range(5):
+        arr[i] = list(map(int, input().split()))
+
+dx = [0, 0, -1, 1]
+dy = [-1, 1, 0, 0]
+
+sum = 0
+
+for x in range(len(arr)):
+    for y in range(len(arr[x])):
+        for i in range(len(arr) - 1):
+            testX = x + dx[i]
+            testY = y + dy[i]
+            if iswall(testX, testY) == False:
+                sum += calAbs(arr[y][x], arr[testY][testX])
+
+print('sum = {}'.format(sum))

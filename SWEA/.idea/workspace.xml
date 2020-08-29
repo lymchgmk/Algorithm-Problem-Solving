@@ -1,43 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f757eda9-b86f-4256-b0d2-07856145eefb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Progammers/코딩테스트 연습/완전탐색/모의고사.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Progammers/코딩테스트 연습/완전탐색/소수 찾기.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Progammers/코딩테스트 연습/완전탐색/숫자 야구.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Progammers/코딩테스트 연습/정렬/H-Index.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Progammers/코딩테스트 연습/정렬/K번째수.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Progammers/코딩테스트 연습/정렬/가장 큰 수.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Progammers/코딩테스트 연습/탐욕법(Greedy)/체육복.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Progammers/코딩테스트 연습/해시/베스트앨범.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Progammers/코딩테스트 연습/해시/위장.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Progammers/코딩테스트 연습/해시/위장.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SSAFY/month_test/20200529_month_test/Algo1_구미_1반_임창묵.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SSAFY/month_test/20200529_month_test/Algo1_구미_1반_임창묵.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SSAFY/month_test/20200529_month_test/Algo2_구미_1반_임창묵.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SSAFY/month_test/20200529_month_test/Algo2_구미_1반_임창묵.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SSAFY/month_test/20200529_month_test/Algo3_구미_1반_임창묵.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SSAFY/month_test/20200529_month_test/Algo_구미_1반_임창묵.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SSAFY/month_test/20200529_month_test/Algo_구미_1반_임창묵/.idea/Algo_구미_1반_임창묵.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SSAFY/month_test/20200529_month_test/Algo_구미_1반_임창묵/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SSAFY/month_test/20200529_month_test/Algo_구미_1반_임창묵/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SSAFY/month_test/20200529_month_test/Algo_구미_1반_임창묵/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SSAFY/month_test/20200529_month_test/Algo_구미_1반_임창묵/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SSAFY/month_test/20200529_month_test/Algo_구미_1반_임창묵/Algo1_구미_1반_임창묵.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SSAFY/month_test/20200529_month_test/Algo_구미_1반_임창묵/Algo2_구미_1반_임창묵.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SSAFY/month_test/20200529_month_test/Algo_구미_1반_임창묵/Algo3_구미_1반_임창묵.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/수업/1248_공통조상.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/수업/1248_공통조상.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/수업/1249_보급로.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/수업/5521_상원이의 생일파티.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/수업/5521_상원이의 생일파티.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/수업/5174.subtree.py" beforeDir="false" afterPath="$PROJECT_DIR$/수업/5174.subtree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test.py" beforeDir="false" afterPath="$PROJECT_DIR$/../test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../test.txt" afterDir="false" />
-    </list>
+    <list default="true" id="f757eda9-b86f-4256-b0d2-07856145eefb" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -199,22 +163,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1152" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1591232453813" />
-    <state width="1899" height="276" key="GridCell.Tab.0.bottom" timestamp="1591243518723">
+    <state width="1899" height="276" key="GridCell.Tab.0.bottom" timestamp="1591245280531">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="276" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1591243518723" />
-    <state width="1899" height="276" key="GridCell.Tab.0.center" timestamp="1591243518723">
+    <state width="1899" height="276" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1591245280531" />
+    <state width="1899" height="276" key="GridCell.Tab.0.center" timestamp="1591245280530">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="276" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1591243518723" />
-    <state width="1899" height="276" key="GridCell.Tab.0.left" timestamp="1591243518723">
+    <state width="1899" height="276" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1591245280530" />
+    <state width="1899" height="276" key="GridCell.Tab.0.left" timestamp="1591245280530">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="276" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1591243518723" />
-    <state width="1899" height="276" key="GridCell.Tab.0.right" timestamp="1591243518723">
+    <state width="1899" height="276" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1591245280530" />
+    <state width="1899" height="276" key="GridCell.Tab.0.right" timestamp="1591245280531">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="276" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1591243518723" />
+    <state width="1899" height="276" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1591245280531" />
     <state x="922" y="162" key="SettingsEditor" timestamp="1585883327427">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
