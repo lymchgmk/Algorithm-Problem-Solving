@@ -14,6 +14,7 @@ def DFS(depth):
         else:
             continue
         break
+
     else:  # 모두 0
         # 결과 갱신
         if depth < my_min:

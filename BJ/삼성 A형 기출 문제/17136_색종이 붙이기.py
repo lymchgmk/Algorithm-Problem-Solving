@@ -63,3 +63,39 @@ if sum_list(board) != 0 or not check_count(confetti_count):
 
 else:
     print(sum(confetti_count))
+
+
+
+def DFS(depth):
+    global my_min
+
+    if depth >= my_min:
+        return
+
+    for r in range(10):
+        for c in range(10):
+            print(100, r, c)
+            if my_map[r][c]:
+                break
+            else:
+                print(0, r, c)
+                continue
+        break
+        
+
+my_map = [list(map(int, input().split())) for _ in range(10)]
+papers = [0, 5, 5, 5, 5, 5]
+INF = float('inf')
+my_min = INF
+# DFS(0)
+# print(-1 if my_min == INF else my_min)
+
+for r in range(10):
+    for c in range(10):
+        print(100, r, c)
+        if my_map[r][c]:
+            break
+        else:
+            print(0, r, c)
+            continue
+    break
