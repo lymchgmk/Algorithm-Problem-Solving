@@ -27,3 +27,5 @@ visited=[]
 visited.append([0,0])
 dfs(arr, [0,0], [2,2])
 print(visited)
+
+# status
