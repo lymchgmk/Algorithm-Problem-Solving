@@ -2,10 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a6b927d-dadf-40e5-9629-6659a15e4294" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/BJ/삼성 SW 역량 테스트 기출 문제/19235_모노미노도미노.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/BJ/삼성 SW 역량 테스트 기출 문제/19235_모노미노도미노.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BJ/삼성 SW 역량 테스트 기출 문제/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BJ/삼성 SW 역량 테스트 기출 문제/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BJ/삼성 SW 역량 테스트 기출 문제/.idea/삼성 SW 역량 테스트 기출 문제.iml" beforeDir="false" afterPath="$PROJECT_DIR$/BJ/삼성 SW 역량 테스트 기출 문제/.idea/삼성 SW 역량 테스트 기출 문제.iml" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kakao.py" beforeDir="false" afterPath="$PROJECT_DIR$/kakao.py" afterDir="false" />
+>>>>>>> 971b1f6e451e2f7faab3cd941bfa958690789bb7
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -226,10 +231,17 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
+<<<<<<< HEAD
     <state x="459" y="237" key="com.intellij.ide.util.TipDialog" timestamp="1601178835426">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="459" y="237" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1601178835426" />
+=======
+    <state x="1130" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1601472546745">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1130" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1601472546745" />
+>>>>>>> 971b1f6e451e2f7faab3cd941bfa958690789bb7
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
