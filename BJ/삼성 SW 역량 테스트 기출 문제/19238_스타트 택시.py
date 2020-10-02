@@ -35,11 +35,7 @@ def measure_distance(start, end, map_data):
     while deq:
         temp = deq.popleft()
         x, y = temp[0], temp[1]
-
-        # for i in range(N):
-        #     print(distance_map[i])
-        # print()
-
+        
         if x == end[0] and y == end[1]: 
             return distance_map[x][y]
 
