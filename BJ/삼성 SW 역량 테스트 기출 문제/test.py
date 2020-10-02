@@ -1,108 +1,85 @@
 import sys
 sys.stdin = open("19238_스타트 택시.txt", "r")
 
+
 from collections import deque
-
-input = sys.stdin.readline
-dx = [1, -1, 0, 0]
-dy = [0, 0, 1, -1]
-
-def bfs1(x, y):
-    global fuel
-    q1.append([x, y])
-    c1[x][y], cnt = 1, 0
-    while q1:
-        qlen = len(q1)
-        p = []
-        cnt += 1
-        if cnt >= fuel:
-            return 0
-        for _ in range(qlen):
-            x, y = q1.popleft()
-            for i in range(4):
-                nx, ny = x + dx[i], y + dy[i]
-                if 0 <= nx < n and 0 <= ny < n:
-                    if a[nx][ny] != -1 and c1[nx][ny] == 0:
-                        if a[nx][ny] > 0:
-                            p.append([nx, ny])
-                        q1.append([nx, ny])
-                        c1[nx][ny] = 1
-        if p:
-            break
-
-    if not p:
-        return 0
-
-    fuel -= cnt
-    p = sorted(p)
-    x, y = p[0]
-    res = bfs2(x, y, a[x][y])
-    if res == 0:
-        return 0
-    
-    length, nx, ny = res
-    fuel += length
-    a[x][y] = 0
-    return nx, ny
+from copy import deepcopy
 
 
-def bfs2(x, y, idx):
-    q2.append([x, y])
-    c2[x][y] = 0
-    while q2:
-        x, y = q2.popleft()
-        if c2[x][y] >= fuel:
-            return 0
+# 0. 초기 데이터
+N, M, fuel = map(int, input().split())
+map_data = [list(-1 if x == 1 else 0 for x in map(int, input().split())) for _ in range(N)]
+taxi = list(map(lambda x: x-1, map(int, input().split())))
+customers_data = [list(map(lambda x: x-1, map(int, input().split()))) for _ in range(M)]
+
+# 0-1. 내 데이터
+is_arrived = [False] * M
+
+# 1. BFS로 거리 측정
+def BFS_measure_distance(start, end, map_data):
+    distance_map = deepcopy(map_data)
+    visited = []
+
+    dir = ((1, 0), (-1, 0), (0, 1), (0, -1))
+
+    deq = deque()
+    deq.append(start)
+
+    while deq:
+
+        temp = deq.popleft()
+
+        if temp == end:
+            # 1-1. 예외) 연료 부족으로 도달 못함
+            if distance_map[temp[0]][temp[1]] > fuel:
+                return -1
+            else:
+                # end에 도달하는 경우
+                return distance_map[temp[0]][temp[1]]
+
         for i in range(4):
-            nx, ny = x + dx[i], y + dy[i]
-            if 0 <= nx < n and 0 <= ny < n:
-                if a[nx][ny] != -1 and c2[nx][ny] == -1:
-                    q2.append([nx, ny])
-                    c2[nx][ny] = c2[x][y] + 1
-                    if [nx, ny] == d[idx]:
-                        return c2[nx][ny], nx, ny
-    return 0
+            test = (temp[0] + dir[i][0], temp[1] + dir[i][1])
 
-
-n, m, fuel = map(int, input().split())
-a = []
-for i in range(n):
-    a.append(list(map(int, input().split())))
-    for j in range(n):
-        if a[i][j] == 1:
-            a[i][j] = -1
-
-x, y = map(int, input().split())
-
-d = [[] for _ in range(m+1)]
-for i in range(m):
-    x1, y1, x2, y2 = map(int, input().split())
-    a[x1-1][y1-1] = i+1
-    d[i+1] = [x2-1, y2-1]
-
-x -= 1; y -= 1
-for _ in range(m):
-    q1, c1 = deque(), [[0 for _ in range(n)] for _ in range(n)]
-    q2, c2 = deque(), [[-1 for _ in range(n)] for _ in range(n)]
-
-    if a[x][y] > 0:
-        res = bfs2(x, y, a[x][y])
-        if res == 0:
-            print(-1)
-            sys.exit()
-        length, nx, ny = res
-        if length > fuel:
-            print(-1)
-            sys.exit()
-        fuel += length
-        a[x][y] = 0
-        x, y = nx, ny
-        continue
-
-    res = bfs1(x, y)
-    if res == 0:
-        print(-1)
-        sys.exit()
+            if 0 <= test[0] < N and 0 <= test[1] < N and map_data[test[0]][test[1]] != -1 and test not in visited:
+                distance_map[test[0]][test[1]] = distance_map[temp[0]][temp[1]] + 1
+                visited.append(temp)
+                deq.append(test)
+    
+    # 1-2. 예외) 벽때문에 도달 못함
+    if distance_map[end[0]][end[1]] == 0: return -1
     else:
-        x, y = res
-print(fuel)
+        return distance_map[end[0]][end[1]]
+
+flag = False
+while False in is_arrived:
+    who_can_take_taxi = []
+    for i in range(M):
+        if is_arrived[i] is False:
+            distance = BFS_measure_distance(taxi, customers_data[i][:2], map_data)
+            if distance != -1:
+                who_can_take_taxi.append([distance] + customers_data[i] + [i])
+    
+    if not who_can_take_taxi:
+        flag = True
+        break
+
+    if flag == True:
+        break
+
+    who_takes_taxi = sorted(who_can_take_taxi, key = lambda x : (x[0], x[1], x[2]))[0]
+    fuel -= who_takes_taxi[0]
+    taxi = who_takes_taxi[1:3]
+
+    arrival_distance = BFS_measure_distance(taxi, who_takes_taxi[3:5], map_data)
+    if fuel < arrival_distance or arrival_distance == -1:
+        flag = True
+        break
+
+    fuel += arrival_distance
+    taxi = who_takes_taxi[3:5]
+    is_arrived[who_takes_taxi[-1]] = True
+
+if flag == False:
+    print(fuel)
+else:
+    print(-1)

@@ -2,17 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a6b927d-dadf-40e5-9629-6659a15e4294" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Progammers/코딩테스트 연습/깊이/너비 우선 탐색(DFS/타겟 넘버.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Progammers/코딩테스트 연습/힙(Heap)/더 맵게.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SWEA/수업/1251_하나로.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SWEA/수업/1251_하나로.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SWEA/수업/1486_장훈이의 높은 선반.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SWEA/수업/1486_장훈이의 높은 선반.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reference/subset.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reference/subset_2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SWEA/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SWEA/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SWEA/수업/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SWEA/수업/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BJ/삼성 SW 역량 테스트 기출 문제/19235_모노미노도미노.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BJ/삼성 SW 역량 테스트 기출 문제/19235_모노미노도미노.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BJ/삼성 SW 역량 테스트 기출 문제/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BJ/삼성 SW 역량 테스트 기출 문제/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BJ/삼성 SW 역량 테스트 기출 문제/.idea/삼성 SW 역량 테스트 기출 문제.iml" beforeDir="false" afterPath="$PROJECT_DIR$/BJ/삼성 SW 역량 테스트 기출 문제/.idea/삼성 SW 역량 테스트 기출 문제.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,28 +52,7 @@
       <recent name="C:\Users\lymch\OneDrive\바탕 화면\Algo_lymchgmk" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.타겟 넘버">
-    <configuration name="숫자 야구" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Algo_lymchgmk" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Progammers/코딩테스트 연습/완전탐색" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Progammers/코딩테스트 연습/완전탐색/숫자 야구.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.1251_하나로">
     <configuration name="타겟 넘버" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Algo_lymchgmk" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -94,6 +66,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Progammers/코딩테스트 연습/깊이/너비 우선 탐색(DFS/타겟 넘버.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="숫자 야구" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Algo_lymchgmk" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Progammers/코딩테스트 연습/완전탐색" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Progammers/코딩테스트 연습/완전탐색/숫자 야구.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -209,7 +202,6 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.타겟 넘버" />
         <item itemvalue="Python.1251_하나로" />
         <item itemvalue="Python.1486_장훈이의 높은 선반" />
         <item itemvalue="Python.H-Index" />
@@ -234,66 +226,10 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1186" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1590043772552">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="459" y="237" key="com.intellij.ide.util.TipDialog" timestamp="1601178835426">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="1186" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1590043772552" />
-    <state width="932" height="283" key="GridCell.Tab.0.bottom" timestamp="1591577205484">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="932" height="283" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1591577205484" />
-    <state width="932" height="283" key="GridCell.Tab.0.center" timestamp="1591577205483">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="932" height="283" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1591577205483" />
-    <state width="932" height="283" key="GridCell.Tab.0.left" timestamp="1591577205483">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="932" height="283" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1591577205483" />
-    <state width="932" height="283" key="GridCell.Tab.0.right" timestamp="1591577205483">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="932" height="283" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1591577205483" />
-    <state width="934" height="339" key="GridCell.Tab.1.bottom" timestamp="1591069131166">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="934" height="339" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1591069131166" />
-    <state width="934" height="339" key="GridCell.Tab.1.center" timestamp="1591069131166">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="934" height="339" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1591069131166" />
-    <state width="934" height="339" key="GridCell.Tab.1.left" timestamp="1591069131166">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="934" height="339" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1591069131166" />
-    <state width="934" height="339" key="GridCell.Tab.1.right" timestamp="1591069131166">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="934" height="339" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1591069131166" />
-    <state x="922" y="162" key="SettingsEditor" timestamp="1585796952060">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="922" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1585796952060" />
-    <state width="968" height="528" key="XDebugger.FullValuePopup" timestamp="1590634593259">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="968" height="528" key="XDebugger.FullValuePopup/0.0.1920.1040@0.0.1920.1040" timestamp="1590634593259" />
-    <state x="1164" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1591505120638">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="1164" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1591505120638" />
-    <state x="1336" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1588241896674">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="1336" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1588241896674" />
-    <state x="1010" y="256" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1586400891117">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="1010" y="256" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1040@0.0.1920.1040" timestamp="1586400891117" />
-    <state x="1134" y="229" width="672" height="678" key="search.everywhere.popup" timestamp="1591322280235">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="1134" y="229" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1591322280235" />
+    <state x="459" y="237" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1601178835426" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

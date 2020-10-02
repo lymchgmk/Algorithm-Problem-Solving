@@ -8,18 +8,9 @@ from copy import deepcopy
 
 # 초기 데이터
 N, M, fuel = map(int, input().split())
-map_data = [list(map(int, input().split())) for _ in range(N)]
-for i in range(N):
-    for j in range(N):
-        if map_data[i][j] == 1: map_data[i][j] = -1
+map_data = [list(-1 if x == 1 else 0 for x in map(int, input().split())) for _ in range(N)]
 taxi = list(map(lambda x: x-1, map(int, input().split())))
 customers_data = sorted([list(map(lambda x: x-1, map(int, input().split()))) for _ in range(M)], key = lambda x : (x[0], x[1]))
-
-
-# 함수
-def is_safe(start, test_map_data):
-    L, x, y = len(map_data), start[0], start[1]
-    return 0 <= x < L and 0 <= y < L and test_map_data[x][y] != -1
 
 
 # 거리 측정하는 함수
