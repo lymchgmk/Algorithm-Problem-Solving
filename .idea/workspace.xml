@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a6b927d-dadf-40e5-9629-6659a15e4294" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/BJ/분류 안 된 문제들/1260_DFS와 BFS.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BJ/분류 안 된 문제들/1260_DFS와 BFS.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kakao.py" beforeDir="false" afterPath="$PROJECT_DIR$/kakao.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BJ/삼성 SW 역량 테스트 기출 문제/19238_스타트 택시.py" beforeDir="false" afterPath="$PROJECT_DIR$/BJ/삼성 SW 역량 테스트 기출 문제/19238_스타트 택시.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BJ/삼성 SW 역량 테스트 기출 문제/19238_스타트 택시.txt" beforeDir="false" afterPath="$PROJECT_DIR$/BJ/삼성 SW 역량 테스트 기출 문제/19238_스타트 택시.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BJ/삼성 SW 역량 테스트 기출 문제/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/BJ/삼성 SW 역량 테스트 기출 문제/test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,27 +55,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Python.1251_하나로">
-    <configuration name="타겟 넘버" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Algo_lymchgmk" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Progammers/코딩테스트 연습/깊이/너비 우선 탐색(DFS" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Progammers/코딩테스트 연습/깊이/너비 우선 탐색(DFS/타겟 넘버.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="숫자 야구" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Algo_lymchgmk" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -85,6 +68,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Progammers/코딩테스트 연습/완전탐색/숫자 야구.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="타겟 넘버" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Algo_lymchgmk" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Progammers/코딩테스트 연습/깊이/너비 우선 탐색(DFS" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Progammers/코딩테스트 연습/깊이/너비 우선 탐색(DFS/타겟 넘버.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -224,10 +228,10 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1130" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1601472546745">
+    <state x="1130" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1601705948851">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1130" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1601472546745" />
+    <state x="1130" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1601705948851" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
