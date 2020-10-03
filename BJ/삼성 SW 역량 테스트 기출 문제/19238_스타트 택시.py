@@ -10,9 +10,10 @@ def take_taxi(taxi_input):
     deq = deque()
     deq.append(taxi_input)
 
-    visited = []
+    visited = [taxi_input]
     dirs = ((0, -1), (-1, 0), (0, 1), (1, 0))
     while deq:
+        print(deq)
         temp_x, temp_y = deq.popleft()
         if type(map_data[temp_x][temp_y]) == list:
             result = [temp_x, temp_y] + map_data[temp_x][temp_y]
@@ -45,10 +46,11 @@ def ride_taxi(taxi_input, destination_input):
     deq = deque()
     deq.append(taxi_input)
 
-    visited = []
+    visited = [taxi_input]
     recover = []
     dirs = ((0, -1), (-1, 0), (0, 1), (1, 0))
     while deq:
+        print(deq)
         temp_x, temp_y = deq.popleft()
         for d in dirs:
             test_x, test_y = temp_x + d[0], temp_y + d[1]
