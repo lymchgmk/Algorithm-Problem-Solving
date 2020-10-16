@@ -1,6 +1,5 @@
 import sys
-sys.stdin=open("12100_2048(Easy).txt")
+sys.stdin=open('test.txt', 'rt')
 
-N=int(input())
-data=[list(map(int, input().split())) for _ in range(N)]
-print(4**5)
+def solve(a):
+    return sum(a)
