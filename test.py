@@ -1,27 +1,14 @@
-def hansoo(x):
-    answer = 0
-    for n in range(1, x+1):
-        n_list = list(map(int, list(str(n))))
-        L = len(n_list)
+import sys
+import re
+import math
+sys.stdin = open('test.txt', 'rt')
 
-        if 0 < L <= 2:
-            answer += 1
-            continue
 
-        else:
-            if n_list[0]-n_list[1] == 0:
-                answer += 1
-                continue
-            else:
-                test = list(range(n_list[0], 10, n_list[1]-n_list[0]))[:L]
-                test_r = list(range(n_list[0], -1, n_list[1]-n_list[0]))[:L]
-                print(n, test, test_r, n_list)
-                if n_list == test or n_list == test_r:
-                    print(999)
-                    answer += 1
-    
-    return answer
-            
+X = int(input())
 
-X = 210
-print(hansoo(X))
+idx = math.ceil((2*X+0.25)**0.5 - 0.5)
+seq = X - idx*(idx-1)//2
+if idx % 2 == 1:
+    print(f'{idx-seq+1}/{seq}')
+else:
+    print(f'{seq}/{idx-seq+1}')
