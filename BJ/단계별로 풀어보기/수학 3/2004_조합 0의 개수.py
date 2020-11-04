@@ -2,22 +2,17 @@ import sys
 sys.stdin = open('2004_조합 0의 개수.txt', 'rt')
 
 
-import math
+def count_power(num, div):
+    count = 0
+    div_n = div
+    while num >= div_n:
+        count += num // div_n
+        div_n *= div
+    return count
 
 
 n, m = map(int, input().split())
-result = 1
-for i in range(n, 0 ,-1):
-    if i > n-m:
-        print(i)
-        result *= i
-    elif i <= m:
-        result //= i
 
-count = 0
-for s in str(result)[::-1]:
-    if s == '0':
-        count += 1
-    else:
-        break
-print(count)
+count_power_2 = count_power(n, 2) - count_power(m, 2) - count_power(n-m, 2)
+count_power_5 = count_power(n, 5) - count_power(m, 5) - count_power(n-m, 5)
+print(min(count_power_2, count_power_5))

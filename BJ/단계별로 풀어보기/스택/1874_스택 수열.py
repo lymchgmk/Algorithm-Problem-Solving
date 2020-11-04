@@ -1,41 +1,45 @@
 import sys
 sys.stdin = open('1874_스택 수열.txt', 'rt')
 
-
 n = int(input())
-seq = [int(input()) for _ in range(n)]
-stack, result, answer = [1], [], ["+"]
-num, idx = 2, 0
-while stack:
-    if n == 1:
-        result.append(1)
-        answer.append("-")
+count = 0
+stack, result = [], []
+flag = True
+
+for _ in range(n):
+    num = int(input())
+
+    while count < num:
+        count += 1
+        stack.append(count)
+        result.append("+")
+
+    if stack[-1] == num:
+        stack.pop()
+        result.append("-")
+    else:
+        flag = False
         break
 
-    if seq[idx] != stack[-1]:
-        stack.append(num)
-        num += 1
-        answer.append("+")
-    else:
-        temp = stack.pop()
-        result.append(temp)
-        idx += 1
-        answer.append("-")
-    
-    if not stack and seq[idx] == num:
-        stack.append(num)
-        answer.append("+")
-        num += 1
-        idx += 1
-    
-print(num, idx, seq[idx])
-print(stack, result, answer)
-
-if result == seq:
-    print(*answer, sep = "\n")
-else:
+if flag == False:
     print("NO")
+else:
+    print(*result, sep = "\n")
 
 
-    
 
+# from sys import stdin
+# input()
+# n,s,p=0,[],[]
+# for i in map(int, stdin):
+#     if s and s[-1]>i:print('NO');exit()
+
+#     while not s or s[-1]<i:
+#         n+=1
+#         s.append(n)
+#         p.append('+')
+
+#     s.pop()
+#     p.append('-')
+
+# print('\n'.join(p))
