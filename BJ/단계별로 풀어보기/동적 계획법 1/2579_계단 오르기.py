@@ -4,13 +4,23 @@ sys.stdin = open("2579_계단 오르기.txt", 'rt')
 
 input = sys.stdin.readline
 N = int(input())
-stairs = [0] + [int(input()) for _ in range(N)]
+stair = [int(input()) for _ in range(N)]
 
-dp = [0] * (N+1)
-dp[1] = stairs[1]
-dp[2] = dp[1] + stairs[2]
-for i in range(3, N+1):
-    dp[i] = stairs[i] + max(max(dp[i-1], dp[i-3]), max(dp[i-2],dp[i-3]))
+dp = [0]*(N+1)
+if N == 1:
+    dp[1] = stair[0]
+elif N == 2:
+    dp[1] = stair[0]
+    dp[2] = max(stair[0]+stair[1],stair[1])
+elif N == 3:
+    dp[1] = stair[0]
+    dp[2] = max(stair[0]+stair[1],stair[1])
+    dp[3] = max(stair[0]+stair[2],stair[1]+stair[2])
+else:
+    dp[1] = stair[0]
+    dp[2] = max(stair[0]+stair[1],stair[1])
+    dp[3] = max(stair[0]+stair[2],stair[1]+stair[2])  
+    for i in range(3,N+1):
+        dp[i] = max(dp[i-2] + stair[i-1] , dp[i-3] + stair[i-2] + stair[i-1])
 
-print(dp)
-
+print(dp[N])
