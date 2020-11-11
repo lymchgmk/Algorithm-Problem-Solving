@@ -9,22 +9,18 @@ test_case = int(input())
 for _ in range(test_case):
     N, M = map(int, input().split())
     deq = deque(enumerate(list(map(int, input().split()))))
-    printed = False
-    count = 1
-    print("deq", deq)
+    cnt = 0
     while deq:
-        for i in range(N):
-            if deq[0][1] < deq[i][1]:
-                deq.append(deq.popleft())
+        test = deq.popleft()
+        for d in deq:
+            if d[1] > test[1]:
+                deq.append(test)
                 break
         else:
-            print(deq)
-            if deq[0][0] == M:
-                print(count)
+            cnt += 1
+            if test[0] == M:
                 break
-            else:
-                deq.popleft()
-                count += 1
+    print(cnt)
 
 
 
