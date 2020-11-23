@@ -5,30 +5,38 @@ sys.stdin = open("2749_피보나치 수 3.txt", "rt")
 input = lambda: sys.stdin.readline().strip()
 N = int(input())
 
-fibo = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597]
-pisano_period = int(15*1000000/10)
-sys.setrecursionlimit(pisano_period)
+
+def fibo(N):
+    SIZE = 2
+    ZERO = [[1, 0], [0, 1]]
+    BASE = [[1, 1], [1, 0]]
 
 
-flag = False
-if N > pisano_period:
-    N %= pisano_period
-    flag = True
+    def square_matrix_mul(a, b, size=SIZE):
+        new_matrix = [[0 for _ in range(size)] for _ in range(size)]
+        for i in range(size):
+            for j in range(size):
+                for k in range(size):
+                    new_matrix[i][j] += a[i][k]*b[k][j]
 
-if flag == True:
-    L = pisano_period
-else:
-    L = N
+        return new_matrix
+
+    
+    def get_nth(N):
+        matrix = ZERO.copy()
+        tmp = BASE.copy()
+        k = 0
+        while 2**k <= N:
+            if N & (1 << k) != 0:
+                matrix = square_matrix_mul(matrix, tmp)
+            k += 1
+            tmp = square_matrix_mul(tmp, tmp)
+        
+        return matrix
+    
+
+    return get_nth(N)[1][0]
 
 
-
-def fibo(n):
-    if n == 0:
-        return 0
-    elif n == 1:
-        return 1
-
-    return fibo(n-1) + fibo(n-2)
-
-
-print(fibo(N))
+N %= 1500000
+print(fibo(N)%1000000)
