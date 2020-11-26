@@ -19,7 +19,7 @@ def solve(coords, N):
 
     short_check = []
     for subset in coords:
-        if mid - subset[0] <= d:
+        if (mid - subset[0])**2 <= d:
             short_check.append(subset)
     short_check.sort(key = lambda x: x[1])
 
