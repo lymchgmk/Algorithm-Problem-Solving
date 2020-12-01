@@ -6,7 +6,6 @@ input = lambda: sys.stdin.readline().strip()
 def DFS(adj_list, start):
     visited = []
     stack = [start]
-
     while stack:
         temp = stack.pop()
         if temp not in visited:
@@ -24,7 +23,6 @@ for _ in range(M):
     a, b = map(int, input().split())
     adj_list[a].append(b)
     adj_list[b].append(a)
-
 
 stoled_together = []
 DFS_visited = [False] * (N+1)
