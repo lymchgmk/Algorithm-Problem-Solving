@@ -25,17 +25,23 @@ for _ in range(M):
     adj_list[a].append(b)
     adj_list[b].append(a)
 
-stoled_together = [DFS(adj_list, i) for i in range(1, N+1)]
 
-stoled_candies = []
+stoled_together = []
+DFS_visited = [False] * (N+1)
+for i in range(1, N+1):
+    if DFS_visited[i] == False:
+        temp = DFS(adj_list, i)
+        stoled_together.append(temp)
+        for t in temp:
+            DFS_visited[t] = True
+
+stoled_candies = [(0, 0)]
 for st in stoled_together:
     candy_sum = 0
     for kid in st:
         candy_sum += c[kid-1]
     stoled_candies.append((len(st), candy_sum))
 
-stoled_candies = [(0, 0)] + list(set(stoled_candies))
-stoled_candies.sort()
 L = len(stoled_candies)
 dp_ks = [[0]*(K) for _ in range(L)]
 for i in range(1, L):
