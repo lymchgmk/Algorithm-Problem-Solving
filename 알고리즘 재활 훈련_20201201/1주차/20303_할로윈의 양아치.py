@@ -3,29 +3,29 @@ sys.stdin = open("20303_할로윈의 양아치.txt", "rt")
 input = lambda: sys.stdin.readline().strip()
 
 
-def DFS(start):
-    global dfs_visited
-    dfs_visited.append(start)
-    for next in adj_list[start]:
-        if next not in dfs_visited:
-            DFS(next)
+def DFS(adj_list, start):
+    visited = []
+    stack = [start]
+
+    while stack:
+        temp = stack.pop()
+        if temp not in visited:
+            visited.append(temp)
+            stack.extend(adj_list[temp])
+    
+    return visited
 
 
 N, M, K = map(int, input().split())
 c = list(map(int, input().split()))
-AB = [list(map(int, input().split())) for _ in range(M)]
 
 adj_list = [[] for _ in range(N+1)]
-for ab in AB:
-    a, b = ab
+for _ in range(M):
+    a, b = map(int, input().split())
     adj_list[a].append(b)
     adj_list[b].append(a)
 
-stoled_together = []
-for i in range(1, N+1):
-    dfs_visited = []
-    DFS(i)
-    stoled_together.append(dfs_visited)
+stoled_together = [DFS(adj_list, i) for i in range(1, N+1)]
 
 stoled_candies = []
 for st in stoled_together:
@@ -37,7 +37,7 @@ for st in stoled_together:
 stoled_candies = [(0, 0)] + list(set(stoled_candies))
 stoled_candies.sort()
 L = len(stoled_candies)
-dp_ks = [[0]*K for _ in range(L)]
+dp_ks = [[0]*(K) for _ in range(L)]
 for i in range(1, L):
     for j in range(1, K):
         w, v = stoled_candies[i]
@@ -46,4 +46,5 @@ for i in range(1, L):
         else:
             dp_ks[i][j] = max(dp_ks[i-1][j-w] + v, dp_ks[i-1][j])
 
-print(dp_ks[L-1][K-1])
+answer = dp_ks[L-1][K-1]
+print(answer)
