@@ -1,37 +1,33 @@
 import sys
 sys.stdin = open('2206_벽 부수고 이동하기.txt', 'rt')
-
-
+input = lambda: sys.stdin.readline().strip()
 from collections import deque
 
 
-input = sys.stdin.readline
-N, M = map(int, input().split())
-arr = [list(input()) for _ in range(N)]
-dist = [[[0, 0] for _ in range(M)] for _ in range(N)]
-dist[0][0][0] = 1
-dirs = ((1, 0), (-1, 0), (0, 1), (0, -1))
+def bfs():
+    deq = deque([[0, 0, 1]])
+    visited = [[[0]*2 for _ in range(M)] for _ in range(N)]
+    visited[0][0][1] = 1
+    dirs = [[1, 0], [0, 1], [-1, 0], [0, -1]]
 
-def BFS():
-    global dist
-    deq = deque([(0, 0, 0)])
     while deq:
-        x, y, w = deq.popleft()
-        if x == N-1 and y == M-1:
-            return dist[x][y][w]
-        
-        for d in dirs:
-            test_x, test_y = x + d[0], y + d[1]
-            if test_x < 0 or test_x >= N or test_y < 0 or test_y >= M:
-                continue
-            if dist[test_x][test_y][w]:
-                continue
-            if arr[test_x][test_y] == '0':
-                dist[test_x][test_y][w] = dist[test_x][test_y][w] + 1
-                deq.append((test_x, test_y, w))
-            if arr[test_x][test_y] == '1' and w == 0:
-                dist[test_x][test_y][1] = dist[test_x][test_y][w] + 1
-                deq.append((test_x, test_y, 1))
+        now_x, now_y, wall = deq.popleft()
+        if now_x == N-1 and now_y == M-1:
+            return visited[now_x][now_y][wall]
+        for dir in dirs:
+            next_x, next_y = now_x + dir[0], now_y + dir[1]
+            if 0 <= next_x < N and 0 <= next_y < M:
+                if arr[next_x][next_y] == 1 and wall == 1:
+                    visited[next_x][next_y][0] = visited[now_x][now_y][1] + 1
+                    deq.append([next_x, next_y, 0])
+                elif arr[next_x][next_y] == 0 and visited[next_x][next_y][wall] == 0:
+                    visited[next_x][next_y][wall] = visited[now_x][now_y][wall] + 1
+                    deq.append([next_x, next_y, wall])
+    
     return -1
 
-print(BFS())
+
+N, M = map(int, input().split())
+arr = [list(map(int, list(input()))) for _ in range(N)]
+
+print(bfs())
