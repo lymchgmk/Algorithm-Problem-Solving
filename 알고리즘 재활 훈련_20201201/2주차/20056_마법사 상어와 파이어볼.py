@@ -4,10 +4,21 @@ input = lambda: sys.stdin.readline().strip()
 from collections import deque
 
 
-def subset(lst):
-    L = len(lst)
-    result = []
-    for i in range(1<<L):
-        for j in range(L):
-            temp = [x for x in lst if i & (1 << j)]
-            print(temp)
+def FB_move():
+    for i in range(N):
+        for j in range(N):
+            if MAP[i][j] != None and MAP[i][j][3] == False:
+                pass
+    
+    for i in range(N):
+        for j in range(N):
+            if len(MAP[i][j]) > 1:
+                
+
+
+N, M, K = map(int, input().split())
+MAP = [[None]*N for _ in range(N)]
+for _ in range(M):
+    fb = list(map(int, input().split()))
+    MAP[fb[0]-1][fb[1]-1] = fb[2:] + [False]
+print(MAP)
