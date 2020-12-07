@@ -7,18 +7,18 @@ from collections import deque
 def FB_move():
     for i in range(N):
         for j in range(N):
-            if MAP[i][j] != None and MAP[i][j][3] == False:
+            if MAP[i][j] != None and MAP[i][j][0] == False:
                 pass
     
     for i in range(N):
         for j in range(N):
             if len(MAP[i][j]) > 1:
-                
+
 
 
 N, M, K = map(int, input().split())
 MAP = [[None]*N for _ in range(N)]
 for _ in range(M):
     fb = list(map(int, input().split()))
-    MAP[fb[0]-1][fb[1]-1] = fb[2:] + [False]
+    MAP[fb[0]-1][fb[1]-1] = [False] + fb[2:]
 print(MAP)
