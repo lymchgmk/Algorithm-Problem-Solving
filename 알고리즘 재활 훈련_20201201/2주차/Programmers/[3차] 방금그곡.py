@@ -1,40 +1,55 @@
 import sys
 
-
-m = "ABCDEFG"
-musicinfos = ["12:00,12:14,HELLO,CDEFGAB", "13:00,13:05,WORLD,ABCDEF"]
+m = "CC#BCC#BCC#BCC#B"
+musicinfos = ["03:00,03:30,FOO,CC#B", "04:00,04:08,BAR,CC#BCC#BCC#B"]
+# musicinfos = ["12:00,12:14,HELLO,C#DEC#FGAB", "13:00,13:05,WORLD,ABC#DEF"]
 
 def solution(m, musicinfos):
-    answer = ''
-    result = []
+    answer = []
+
+
+    def tokenize(sample):
+        sample = sample.replace('C#', 'c')
+        sample = sample.replace('D#', 'd')
+        sample = sample.replace('F#', 'f')
+        sample = sample.replace('G#', 'g')
+        sample = sample.replace('A#', 'a')
+        
+        return sample
+
 
     for musicinfo in musicinfos:
-        idx = 1
         start, end, title, music = musicinfo.split(',')
         start_h, start_m = map(int, start.split(':'))
         end_h, end_m = map(int, end.split(':'))
-        time = (end_h - start_h)*60 + (end_m - start_m)
-        radio = (music*(time//len(music)+2))
-        if radio[time+1] == '#':
-            radio = radio[:time+1]
-        else:
-            radio = radio[:time]
+
+        m, music = tokenize(m), tokenize(music)
+
+        time = (end_h-start_h)*60 + (end_m-start_m)
+        repeat = time//len(music) + 1
+        music = (music*repeat)[:time]
         
-        if len(radio) < len(m):
+        if len(music) < len(m):
             continue
 
-        for i in range(len(radio)-len(m)+1):
+        for i in range(len(music)-len(m)+1):
             for j in range(len(m)):
-                if radio[i+j] != m[j]:
+                if music[i+j] != m[j]:
                     break
             else:
-                result.append([time, idx, title])
-        idx += 1
-    
-    if not result:
-        return None
+                if not answer:
+                    answer = [len(music), title]
+                else:
+                    if answer[0] < len(music):
+                        answer = [len(music), title]
+                break
+                
+    if not answer:
+        answer = '(None)'
     else:
-        return sorted(result, key=lambda x: (-x[0], x[1]))[0][2]
+        answer = answer[1]
+        
+    return answer
 
-
+        
 print(solution(m, musicinfos))
