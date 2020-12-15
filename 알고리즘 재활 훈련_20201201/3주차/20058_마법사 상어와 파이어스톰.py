@@ -6,14 +6,22 @@ input = lambda: sys.stdin.readline().strip()
 def firestorm(ice_area, n, how_many_fs, divide_len):
     def divide_and_rotate(divide_len):
         for i in range(0, 2**n, 2**divide_len):
-            for j in range(0, )
+            for j in range(0, 2**n, 2**divide_len):
+                for k in range(2**divide_len):
+
 
     def melt():
         dirs = ((1, 0), (-1, 0), (0, 1), (0, -1))
         for x in range(2**n):
             for y in range(2**n):
+                can_melt = 0
                 for d in dirs:
-                    nx = 
+                    nx, ny = x+d[0], y+d[1]
+                    if 0<=nx<2**n and 0<=ny<2**n and ice_area[nx][ny]:
+                        can_melt += 1
+                if can_melt >= 3 and ice_area[x][y]:
+                    ice_area[x][y] -= 1
+
 
     
     for dl in divide_len:
