@@ -1,5 +1,5 @@
 import sys
-sys.stdin = open('20061_모노미노도미노 2.txt', 'rt')
+sys.stdin = open('19235_모노미노도미노.txt', 'rt')
 input = lambda: sys.stdin.readline().strip()
 
 
@@ -36,10 +36,10 @@ for _ in range(N):
         else:
             blue_board[x][5], blue_board[x][4] = 1, 1
         
-        green_board_col0 = [row[y] for row in green_board]
-        green_board_col1 = [row[y+1] for row in green_board]
+        green_board_col_x0 = [row[y] for row in green_board]
+        green_board_col_x1 = [row[y+1] for row in green_board]
         for i in range(6):
-            if green_board_col0[i] or green_board_col1[i]:
+            if green_board_col_x0[i] or green_board_col_x1[i]:
                 green_board[i-1][y], green_board[i-1][y+1] = 1, 1
                 break
         else:
