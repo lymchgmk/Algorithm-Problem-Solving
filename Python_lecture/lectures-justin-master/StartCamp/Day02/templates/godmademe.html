@@ -1,0 +1,9 @@
+{% if check == 1 %}
+<h1>신이 {{name}}을(를) 만들 때</h1>
+<img src="../images/01.JPG" alt="">
+<p><span style="color: red; font-weight: bold;">{{ chars[0] }}</span>{{first}}</p>
+<p><span style="color: green; font-weight: bold;">{{ chars[1] }}</span>{{second}}</p>
+<p><span style="color: blue; font-weight: bold;">{{ chars[2] }}</span>{{third}}</p>
+{% else %}
+<h1 style="color: red; font-size: 50px;">숫자말고 이름을 입력해주세요!</h1>
+{% endif %}
