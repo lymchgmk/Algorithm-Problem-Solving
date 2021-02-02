@@ -2,8 +2,7 @@
 def Euclidean_1(a, b):
     while b != 0:
         r = a % b
-        a = b
-        b = r
+        a, b = b, r
     
     return a
 

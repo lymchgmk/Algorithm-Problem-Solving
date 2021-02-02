@@ -40,5 +40,5 @@ for marble in marbles:
     if marble in measurable:
         ans.append('Y')
     else:
-        ans.append('X')
+        ans.append('N')
 print(*ans)
