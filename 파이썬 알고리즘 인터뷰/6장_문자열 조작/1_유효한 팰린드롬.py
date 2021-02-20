@@ -30,3 +30,15 @@ def isPalindrome_2(self, s: str) -> bool:
             return False
 
     return True
+
+
+# 풀이 3. 슬라이싱 사용
+import re
+
+
+def isPalindrome_3(self, s: str) -> bool:
+    s = s.lower()
+    # 정규식으로 불필요한 문자 필터링
+    s = re.sub('[^a-z0-9]', '', s)
+
+    return s == s[::-1]
