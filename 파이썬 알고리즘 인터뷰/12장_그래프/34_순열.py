@@ -7,6 +7,7 @@ def permute_1(self, nums: List[int]) -> List[List[int]]:
     results = []
     prev_elements = []
     
+    
     def dfs(elements):
         # 리프 노드일 때 결과 추가
         if len(elements) == 0:
@@ -20,6 +21,7 @@ def permute_1(self, nums: List[int]) -> List[List[int]]:
             prev_elements.append(e)
             dfs(next_elements)
             prev_elements.pop()
+        
         
     dfs(nums)
     
