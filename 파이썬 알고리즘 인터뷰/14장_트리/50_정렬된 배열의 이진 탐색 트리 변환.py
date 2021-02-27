@@ -5,7 +5,7 @@ import collections
 class TreeNode:
     def __init__(self, val):
         self.val = val
-        self.left = self.right = 0
+        self.left = self.right = None
         
         
 # 풀이 1. 이진 검색 결과로 트리 구성

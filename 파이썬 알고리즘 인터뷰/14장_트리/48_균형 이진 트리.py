@@ -1,7 +1,7 @@
 class TreeNode:
     def __init__(self, val):
         self.val = val
-        self.left = self.right = 0
+        self.left = self.right = None
         
 
 # 풀이 1. 재귀 구조로 높이 차이 계산
