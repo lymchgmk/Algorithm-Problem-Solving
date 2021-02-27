@@ -12,7 +12,7 @@ class TreeNode:
 
 # 풀이 1. 반복 구조로 BFS 풀이
 def maxDepth(self, root: TreeNode) -> int:
-    if root is None:
+    if root is None: 
         return 0
 
     queue = collections.deque([root])
