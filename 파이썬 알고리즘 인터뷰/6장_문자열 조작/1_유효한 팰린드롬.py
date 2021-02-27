@@ -15,6 +15,7 @@ def isPalindrome_1(self, s: str) -> bool:
 
 # 풀이 2. 데크 자료형을 이용한 최적화
 import collections
+from typing import Deque
 
 
 def isPalindrome_2(self, s: str) -> bool:
