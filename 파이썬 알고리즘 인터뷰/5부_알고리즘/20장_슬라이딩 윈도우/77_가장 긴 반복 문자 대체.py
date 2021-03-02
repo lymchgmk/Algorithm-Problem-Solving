@@ -9,8 +9,6 @@ def characterReplacement(self, s: str, k: int) -> int:
         counts[s[right - 1]] += 1
         # 가장 흔하게 등장하는 문자 탐색
         max_char_n = counts.most_common(1)[0][1]
-        test = counts.most_common(4)
-        print(test)
         
         # k 초과시 왼쪽 포인터 이동
         if right - left - max_char_n > k:
