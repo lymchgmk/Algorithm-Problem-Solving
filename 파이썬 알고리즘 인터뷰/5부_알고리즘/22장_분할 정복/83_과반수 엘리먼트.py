@@ -32,3 +32,8 @@ def majorityElement_3(self, nums: List[int]) -> int:
     b = self.majorityElement(nums[half:])
     
     return [b, a][nums.count(a) > half]
+
+
+# 풀이 4. 파이썬다운 방식
+def majorityElement_3(self, nums: List[int]) -> int:
+    return sorted(nums)[len(nums) // 2]
