@@ -3,7 +3,7 @@ def searchMatrix_1(self, matrix, target):
     # 예외 처리
     if not matrix:
         return False
-    
+     
     # 첫 행의 맨 뒤
     row = 0
     col = len(matrix[0]) - 1
