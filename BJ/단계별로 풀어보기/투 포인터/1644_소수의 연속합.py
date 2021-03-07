@@ -12,7 +12,18 @@ def is_prime_number(num):
 
 N = int(input())
 prime_nums = [n for n in range(2, N+1) if is_prime_number(n)]
-print(prime_nums)
 
-left, right = 0, 0
-while left
+end = 0
+partial_sum = 0
+cnt = 0
+
+for start in range(len(prime_nums)):
+    while partial_sum < N and end < len(prime_nums):
+        partial_sum += prime_nums[end]
+        end += 1
+    
+    if partial_sum == N:
+        cnt += 1
+    partial_sum -= prime_nums[start]
+
+print(cnt)
