@@ -1,40 +1,33 @@
 import sys
-from itertools import combinations
-from collections import deque
-sys.stdin=open('16637_괄호추가하기.txt')
+sys.stdin = open('16637_괄호추가하기.txt')
 
+
+def dfs(idx, sub_total):
+    print(sub_total)
+    global answer
+    
+    if idx == len(ops):
+        answer = max(answer, int(sub_total))
+        return
+    
+    first = str(eval(sub_total + ops[idx] + nums[idx+1]))
+    dfs(idx+1, first)
+    
+    if idx+1 < len(ops):
+        second = str(eval(nums[idx+1] + ops[idx+1] + nums[idx+2]))
+        second = str(eval(sub_total + ops[idx] + second))
+        dfs(idx+2, second)
+
+
+input = lambda: sys.stdin.readline().strip()
 N = int(input())
-
 expression = input()
-answer = -2 ** 31
+nums, ops = [], []
+for e in expression:
+    nums.append(e) if e.isdigit() else ops.append(e)
 
-operators = ["+", "-", "*"]
-my_operators=[]
-my_numbers=[]
+answer = float('-inf')
 
-for char in expression:
-    if char in operators:
-        my_operators.append(char)
-    else:
-        my_numbers.append(char)
+dfs(0, nums[0])
 
-test=[]
-for i in range(len(my_operators)):
-    for combination in combinations(range(len(my_operators)), i):
-        temp=list(combination)
-        sample=[]
-        for i in range(1, len(temp)):
-            sample.append(temp[i]-temp[i-1])
-        if 1 not in sample:
-            test.append(temp)
-print(expression)
-print(my_numbers)
-print(my_operators)
-print(test)
-
-result=deque()
-# 이걸 어떻게 구현할까
-
-
-
-
+print(answer)
