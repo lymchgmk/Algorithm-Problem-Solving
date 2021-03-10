@@ -1,5 +1,5 @@
 import sys
-sys.stdin = open('11054_가장 긴 바이토닉 부분 수열', 'rt')
+sys.stdin = open('11054_가장 긴 바이토닉 부분 수열.txt', 'rt')
 
 
 def LIS(arr):
