@@ -2,24 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8afed405-a3a1-4a9f-8954-9d0dd53ebe1f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../BJ/분류 안 된 문제들/정규표현식/10820_문자열 분석.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BJ/분류 안 된 문제들/정규표현식/10820_문자열 분석.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2019 카카오 개발자 겨울 인턴십/불량 사용자.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2019 카카오 개발자 겨울 인턴십/불량 사용자.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2021 KAKAO BLIND RECRUITMENT/신규 아이디 추천.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/모든 문제/두 개 뽑아서 더하기.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Progammers.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Progammers.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2019 카카오 개발자 겨울 인턴십/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2019 카카오 개발자 겨울 인턴십/.idea/2019 카카오 개발자 겨울 인턴십.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2019 카카오 개발자 겨울 인턴십/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2019 카카오 개발자 겨울 인턴십/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2019 카카오 개발자 겨울 인턴십/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2019 카카오 개발자 겨울 인턴십/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2019 카카오 개발자 겨울 인턴십/튜플.py" beforeDir="false" afterPath="$PROJECT_DIR$/2019 카카오 개발자 겨울 인턴십/튜플.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2019 카카오 개발자 겨울 인턴십/튜플.txt" beforeDir="false" afterPath="$PROJECT_DIR$/2019 카카오 개발자 겨울 인턴십/튜플.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2019 카카오 개발자 겨울 인턴십/호텔 방 배정.py" beforeDir="false" afterPath="$PROJECT_DIR$/2019 카카오 개발자 겨울 인턴십/호텔 방 배정.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2021 KAKAO BLIND RECRUITMENT/순위 검색.py" beforeDir="false" afterPath="$PROJECT_DIR$/2021 KAKAO BLIND RECRUITMENT/순위 검색.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +33,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.신규 아이디 추천">
+  <component name="RunManager" selected="Python.순위 검색">
     <configuration name="신규 아이디 추천" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Progammers" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -63,6 +47,48 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2021 KAKAO BLIND RECRUITMENT/신규 아이디 추천.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="메뉴 리뉴얼" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Progammers" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2021 KAKAO BLIND RECRUITMENT" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2021 KAKAO BLIND RECRUITMENT/메뉴 리뉴얼.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="순위 검색" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Progammers" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2021 KAKAO BLIND RECRUITMENT" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2021 KAKAO BLIND RECRUITMENT/순위 검색.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -115,6 +141,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.순위 검색" />
+        <item itemvalue="Python.메뉴 리뉴얼" />
         <item itemvalue="Python.신규 아이디 추천" />
         <item itemvalue="Python.불량 사용자" />
         <item itemvalue="Python.튜플" />
@@ -135,22 +163,22 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="936" height="279" key="GridCell.Tab.0.bottom" timestamp="1615555622897">
+    <state width="938" height="279" key="GridCell.Tab.0.bottom" timestamp="1615561613471">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="936" height="279" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1615555622897" />
-    <state width="936" height="279" key="GridCell.Tab.0.center" timestamp="1615555622897">
+    <state width="938" height="279" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1615561613471" />
+    <state width="938" height="279" key="GridCell.Tab.0.center" timestamp="1615561613471">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="936" height="279" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1615555622897" />
-    <state width="936" height="279" key="GridCell.Tab.0.left" timestamp="1615555622897">
+    <state width="938" height="279" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1615561613471" />
+    <state width="938" height="279" key="GridCell.Tab.0.left" timestamp="1615561613471">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="936" height="279" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1615555622897" />
-    <state width="936" height="279" key="GridCell.Tab.0.right" timestamp="1615555622897">
+    <state width="938" height="279" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1615561613471" />
+    <state width="938" height="279" key="GridCell.Tab.0.right" timestamp="1615561613471">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="936" height="279" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1615555622897" />
+    <state width="938" height="279" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1615561613471" />
     <state x="922" y="162" key="SettingsEditor" timestamp="1615475321581">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
