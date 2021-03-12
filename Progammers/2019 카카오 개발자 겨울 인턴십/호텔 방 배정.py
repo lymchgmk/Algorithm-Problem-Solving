@@ -8,4 +8,4 @@ def solution(k, room_number):
 
     return answer
 
-    solution(10, 5)
+

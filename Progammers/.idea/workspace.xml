@@ -1,56 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="50cc14c5-e8f5-4dc0-9a46-d032fbb1afc2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BJ/삼성 A형 기출 문제/16637_괄호추가하기.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BJ/삼성 A형 기출 문제/17135_캐슬 디펜스.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BJ/삼성 A형 기출 문제/17135_캐슬 디펜스.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BJ/삼성 A형 기출 문제/17136_색종이 붙이기.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BJ/삼성 A형 기출 문제/17136_색종이 붙이기.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BJ/삼성 A형 기출 문제/17136_색종이 붙이기_solve.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BJ/삼성 A형 기출 문제/17281_야구공.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BJ/삼성 A형 기출 문제/17281_야구공.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BJ/삼성 A형 기출 문제/17406_배열 돌리기4.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BJ/삼성 A형 기출 문제/17406_배열 돌리기4.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BJ/삼성 A형 기출 문제/3954_Brainfuck 인터프리터.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BJ/삼성 A형 기출 문제/3954_Brainfuck 인터프리터.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BJ/삼성 SW 역량 테스트 기출 문제/12100_2048(Easy).py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BJ/삼성 SW 역량 테스트 기출 문제/12100_2048(Easy).txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BJ/삼성 SW 역량 테스트 기출 문제/14503_로봇 청소기.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BJ/삼성 SW 역량 테스트 기출 문제/14503_로봇 청소기.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BJ/삼성 SW 역량 테스트 기출 문제/17825_주사위 윷놀이.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BJ/삼성 SW 역량 테스트 기출 문제/17825_주사위 윷놀이.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2019 카카오 개발자 겨울 인턴십/크레인 인형뽑기 게임.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SWEA/수업/1240_단순 2진 암호코드.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SWEA/수업/1240_단순 2진 암호코드.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SWEA/수업/5185_이진수.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SWEA/수업/5185_이진수.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SWEA/수업/5186_이진수2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SWEA/수업/5186_이진수2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SWEA/수업/5188_최소합.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SWEA/수업/5188_최소합.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SWEA/수업/5189_전기카트.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SWEA/수업/5189_전기카트.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SWEA/수업/5201_컨테이너 운반.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SWEA/수업/5201_컨테이너 운반.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SWEA/수업/5202_화물 도크.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SWEA/수업/5202_화물 도크.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SWEA/수업/5203_베이비진 게임.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SWEA/수업/5203_베이비진 게임.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SWEA/수업/임창묵_0429.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SWEA/수업/임창묵_0501.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SWEA/수업/임창묵_0507.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BJ/16637_괄호추가하기.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BJ/16637_괄호추가하기.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../BJ/삼성 A형 기출 문제/16637_괄호추가하기.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BJ/17070_파이프옮기기.py" beforeDir="false" afterPath="$PROJECT_DIR$/../BJ/삼성 A형 기출 문제/17070_파이프옮기기.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BJ/17070_파이프옮기기.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../BJ/삼성 A형 기출 문제/17070_파이프옮기기.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BJ/17070_파이프옮기기_solve.py" beforeDir="false" afterPath="$PROJECT_DIR$/../BJ/삼성 A형 기출 문제/17070_파이프옮기기_solve.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SWEA/수업/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SWEA/수업/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test.txt" beforeDir="false" />
+    <list default="true" id="8afed405-a3a1-4a9f-8954-9d0dd53ebe1f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../BJ/분류 안 된 문제들/정규표현식/10820_문자열 분석.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BJ/분류 안 된 문제들/정규표현식/10820_문자열 분석.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2019 카카오 개발자 겨울 인턴십/불량 사용자.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2019 카카오 개발자 겨울 인턴십/불량 사용자.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2021 KAKAO BLIND RECRUITMENT/신규 아이디 추천.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/모든 문제/두 개 뽑아서 더하기.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Progammers.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Progammers.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019 카카오 개발자 겨울 인턴십/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019 카카오 개발자 겨울 인턴십/.idea/2019 카카오 개발자 겨울 인턴십.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019 카카오 개발자 겨울 인턴십/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019 카카오 개발자 겨울 인턴십/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019 카카오 개발자 겨울 인턴십/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019 카카오 개발자 겨울 인턴십/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019 카카오 개발자 겨울 인턴십/튜플.py" beforeDir="false" afterPath="$PROJECT_DIR$/2019 카카오 개발자 겨울 인턴십/튜플.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019 카카오 개발자 겨울 인턴십/튜플.txt" beforeDir="false" afterPath="$PROJECT_DIR$/2019 카카오 개발자 겨울 인턴십/튜플.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019 카카오 개발자 겨울 인턴십/호텔 방 배정.py" beforeDir="false" afterPath="$PROJECT_DIR$/2019 카카오 개발자 겨울 인턴십/호텔 방 배정.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,8 +36,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="1bcdJl8iMDz6D6U7m2dChF1aLjW" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="1pcH8VCOfp0eqMs1raqfoCDXv6J" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -78,27 +49,115 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
+  <component name="RunManager" selected="Python.신규 아이디 추천">
+    <configuration name="신규 아이디 추천" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Progammers" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2021 KAKAO BLIND RECRUITMENT" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2021 KAKAO BLIND RECRUITMENT/신규 아이디 추천.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="불량 사용자" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Progammers" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2019 카카오 개발자 겨울 인턴십" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2019 카카오 개발자 겨울 인턴십/불량 사용자.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="튜플" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Progammers" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2019 카카오 개발자 겨울 인턴십" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2019 카카오 개발자 겨울 인턴십/튜플.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.신규 아이디 추천" />
+        <item itemvalue="Python.불량 사용자" />
+        <item itemvalue="Python.튜플" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="50cc14c5-e8f5-4dc0-9a46-d032fbb1afc2" name="Default Changelist" comment="" />
-      <created>1588935246398</created>
+      <changelist id="8afed405-a3a1-4a9f-8954-9d0dd53ebe1f" name="Default Changelist" comment="" />
+      <created>1615475298499</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1588935246398</updated>
+      <updated>1615475298499</updated>
     </task>
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="860" y="162" key="SettingsEditor" timestamp="1588935298441">
+    <state width="936" height="279" key="GridCell.Tab.0.bottom" timestamp="1615555622897">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="860" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1588935298441" />
-    <state x="1051" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1588935248745">
+    <state width="936" height="279" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1615555622897" />
+    <state width="936" height="279" key="GridCell.Tab.0.center" timestamp="1615555622897">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1051" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588935248745" />
+    <state width="936" height="279" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1615555622897" />
+    <state width="936" height="279" key="GridCell.Tab.0.left" timestamp="1615555622897">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="936" height="279" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1615555622897" />
+    <state width="936" height="279" key="GridCell.Tab.0.right" timestamp="1615555622897">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="936" height="279" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1615555622897" />
+    <state x="922" y="162" key="SettingsEditor" timestamp="1615475321581">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="922" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1615475321581" />
+    <state x="1132" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1615546855377">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1132" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1615546855377" />
   </component>
 </project>

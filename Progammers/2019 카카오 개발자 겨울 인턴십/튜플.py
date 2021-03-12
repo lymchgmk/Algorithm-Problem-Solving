@@ -1,30 +1,18 @@
 import sys
-sys.stdin=open('튜플.txt')
+sys.stdin = open('튜플.txt', 'rt')
+import collections
 
+
+input = lambda: sys.stdin.readline().strip()
 def solution(s):
-    answer = []
-    sample1 = []
-    sample2 = []
-    count_s = []
-
+    tmp_s = ''
     for char in s:
-        if char.isdigit() or char == ",":
-            sample1.append(char)
-
-    test1 = ''.join(sample1)
-    test2 = test1.split(',')
-
-    for string in test2:
-        if int(string) not in sample2:
-            sample2.append(int(string))
-            count_s.append([s.count(string), int(string)])
-
-    count_s.sort(reverse=True)
-    for c in count_s:
-        answer.append(c[1])
-
+        if char not in ("'", '"', '{', '}'):
+            tmp_s += char
+    tmp_lst = tmp_s.split(',')
+    tmp_counter = collections.Counter(tmp_lst).most_common(len(tmp_lst))
+    answer = [int(num[0]) for num in tmp_counter]
+    
     return answer
 
-s=input()
-
-print(solution(s))
+print(solution(input()))
