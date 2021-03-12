@@ -3,20 +3,10 @@ import re
 
 def solution(info, query):
     answer = []
-    q_1 = []
-    for q in query:
-        print(q)
-        p = re.compile(r"(\w+)"
-                       r"\s[and]\s"
-                       r"(\w+)"
-                       r"\s[and]"
-                       r"\s(\w+)"
-                       r"\s[and]"
-                       r"\s(\w+)"
-                       r"\s[and]"
-                       r"\s(\d+)")
-        m = p.search(q)
-        print(m)
+    info = [i.split(' ') for i in info]
+    query = [q.split(' and ') for q in query]
+    print(info)
+    print(query)
         
     return answer
 
