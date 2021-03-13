@@ -1,31 +1,21 @@
-def solution(distance, rocks, n):
-    rocks.sort()
-    rocks.append(distance)
-    left, right = 0, distance
+def solution(numbers, target):
+    global answer
     answer = 0
-    while left <= right:
-        prev_rock = 0
-        min_dist = float('inf')
-        removed_rocks = 0
+    
+    def DFS(idx, val):
+        global answer
+        if idx == len(numbers):
+            if target == val:
+                answer += 1
+            return
         
-        mid = (left+right)//2
-        for now_rock in rocks:
-            if now_rock - prev_rock < mid:
-                removed_rocks += 1
-            else:
-                min_dist = min(min_dist, now_rock - prev_rock)
-                prev_rock = now_rock
-        
-        if removed_rocks > n:
-            right = mid - 1
-        else:
-            left = mid + 1
-            answer = min_dist
-
+        DFS(idx+1, val+numbers[idx])
+        DFS(idx+1, val-numbers[idx])
+    
+    DFS(0, 0)
     return answer
 
 
-distance = 25
-rocks = [2, 14, 11, 21, 17]
-n = 2
-print(solution(distance, rocks, n))
+numbers = [1, 1, 1, 1, 1]
+target = 3
+print(solution(numbers, target))

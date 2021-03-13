@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8afed405-a3a1-4a9f-8954-9d0dd53ebe1f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../BJ/분류 안 된 문제들/BFS/1261_알고스팟.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BJ/분류 안 된 문제들/BFS/1261_알고스팟.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/연습.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/코딩테스트 연습/이분탐색/입국심사.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/코딩테스트 연습/이분탐색/징검다리.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/코딩테스트 연습/깊이 너비 우선 탐색/네트워크.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/코딩테스트 연습/깊이 너비 우선 탐색/단어 변환.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/코딩테스트 연습/깊이 너비 우선 탐색/여행경로.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/코딩테스트 연습/깊이/너비 우선 탐색(DFS/타겟 넘버.py" beforeDir="false" afterPath="$PROJECT_DIR$/코딩테스트 연습/깊이 너비 우선 탐색/타겟 넘버.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/연습.py" beforeDir="false" afterPath="$PROJECT_DIR$/연습.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +41,7 @@
       <recent name="C:\Users\lymch\OneDrive\바탕 화면\Algo_lymchgmk\Progammers\코딩테스트 연습\깊이 너비 우선 탐색" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.타겟 넘버">
+  <component name="RunManager" selected="Python.여행경로">
     <configuration name="신규 아이디 추천" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Progammers" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -65,7 +63,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="메뉴 리뉴얼" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="단어 변환" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Progammers" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -73,11 +71,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2021 KAKAO BLIND RECRUITMENT" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/코딩테스트 연습/깊이 너비 우선 탐색" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2021 KAKAO BLIND RECRUITMENT/메뉴 리뉴얼.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/코딩테스트 연습/깊이 너비 우선 탐색/단어 변환.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -149,7 +147,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="합승 택시 요금" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="네트워크" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Progammers" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -157,11 +155,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2021 KAKAO BLIND RECRUITMENT" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/코딩테스트 연습/깊이 너비 우선 탐색" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2021 KAKAO BLIND RECRUITMENT/합승 택시 요금.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/코딩테스트 연습/깊이 너비 우선 탐색/네트워크.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -170,7 +168,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="입국심사" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="연습" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Progammers" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -178,11 +176,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/코딩테스트 연습/이분탐색" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/코딩테스트 연습/이분탐색/입국심사.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/연습.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -191,7 +189,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="징검다리" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="여행경로" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Progammers" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -199,11 +197,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/코딩테스트 연습/이분탐색" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/코딩테스트 연습/깊이 너비 우선 탐색" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/코딩테스트 연습/이분탐색/징검다리.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/코딩테스트 연습/깊이 너비 우선 탐색/여행경로.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -214,11 +212,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.여행경로" />
+        <item itemvalue="Python.단어 변환" />
+        <item itemvalue="Python.네트워크" />
+        <item itemvalue="Python.연습" />
         <item itemvalue="Python.타겟 넘버" />
-        <item itemvalue="Python.징검다리" />
-        <item itemvalue="Python.입국심사" />
-        <item itemvalue="Python.합승 택시 요금" />
-        <item itemvalue="Python.메뉴 리뉴얼" />
       </list>
     </recent_temporary>
   </component>
@@ -236,22 +234,22 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="938" height="278" key="GridCell.Tab.0.bottom" timestamp="1615636894393">
+    <state width="936" height="278" key="GridCell.Tab.0.bottom" timestamp="1615655275159">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="278" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1615636894393" />
-    <state width="938" height="278" key="GridCell.Tab.0.center" timestamp="1615636894393">
+    <state width="936" height="278" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1615655275159" />
+    <state width="936" height="278" key="GridCell.Tab.0.center" timestamp="1615655275159">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="278" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1615636894393" />
-    <state width="938" height="278" key="GridCell.Tab.0.left" timestamp="1615636894393">
+    <state width="936" height="278" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1615655275159" />
+    <state width="936" height="278" key="GridCell.Tab.0.left" timestamp="1615655275159">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="278" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1615636894393" />
-    <state width="938" height="278" key="GridCell.Tab.0.right" timestamp="1615636894393">
+    <state width="936" height="278" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1615655275159" />
+    <state width="936" height="278" key="GridCell.Tab.0.right" timestamp="1615655275159">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="278" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1615636894393" />
+    <state width="936" height="278" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1615655275159" />
     <state width="936" height="347" key="GridCell.Tab.1.bottom" timestamp="1615630091243">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
