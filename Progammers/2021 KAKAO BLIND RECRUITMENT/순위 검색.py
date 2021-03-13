@@ -3,10 +3,9 @@ import re
 
 def solution(info, query):
     answer = []
-    info = [i.split(' ') for i in info]
-    query = [q.split(' and ') for q in query]
-    print(info)
-    print(query)
+    for q in query:
+        re.
+        print(q)
         
     return answer
 
