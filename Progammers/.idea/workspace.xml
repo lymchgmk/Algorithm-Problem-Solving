@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8afed405-a3a1-4a9f-8954-9d0dd53ebe1f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/코딩테스트 연습/스택 큐/프린터.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/코딩테스트 연습/힙(Heap)/이중우선순위큐.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/코딩테스트 연습/힙(Heap)/디스크 컨트롤러.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/연습.py" beforeDir="false" afterPath="$PROJECT_DIR$/연습.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/코딩테스트 연습/힙(Heap)/더 맵게.py" beforeDir="false" afterPath="$PROJECT_DIR$/코딩테스트 연습/힙(Heap)/더 맵게.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +38,7 @@
       <recent name="C:\Users\lymch\OneDrive\바탕 화면\Algo_lymchgmk\Progammers\코딩테스트 연습\깊이 너비 우선 탐색" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.이중우선순위큐">
+  <component name="RunManager" selected="Python.디스크 컨트롤러">
     <configuration name="신규 아이디 추천" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Progammers" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -76,6 +73,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/코딩테스트 연습/힙(Heap)/더 맵게.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="디스크 컨트롤러" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Progammers" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/코딩테스트 연습/힙(Heap)" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/코딩테스트 연습/힙(Heap)/디스크 컨트롤러.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -168,27 +186,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="주식가격" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Progammers" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/코딩테스트 연습/스택 큐" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/코딩테스트 연습/스택 큐/주식가격.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="프린터" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Progammers" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -254,11 +251,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.디스크 컨트롤러" />
         <item itemvalue="Python.이중우선순위큐" />
         <item itemvalue="Python.더 맵게" />
         <item itemvalue="Python.연습" />
         <item itemvalue="Python.프린터" />
-        <item itemvalue="Python.주식가격" />
       </list>
     </recent_temporary>
   </component>
@@ -276,22 +273,22 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="936" height="275" key="GridCell.Tab.0.bottom" timestamp="1615739263000">
+    <state width="936" height="275" key="GridCell.Tab.0.bottom" timestamp="1615741760113">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="936" height="275" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1615739263000" />
-    <state width="936" height="275" key="GridCell.Tab.0.center" timestamp="1615739263000">
+    <state width="936" height="275" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1615741760113" />
+    <state width="936" height="275" key="GridCell.Tab.0.center" timestamp="1615741760113">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="936" height="275" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1615739263000" />
-    <state width="936" height="275" key="GridCell.Tab.0.left" timestamp="1615739263000">
+    <state width="936" height="275" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1615741760113" />
+    <state width="936" height="275" key="GridCell.Tab.0.left" timestamp="1615741760112">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="936" height="275" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1615739263000" />
-    <state width="936" height="275" key="GridCell.Tab.0.right" timestamp="1615739263000">
+    <state width="936" height="275" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1615741760112" />
+    <state width="936" height="275" key="GridCell.Tab.0.right" timestamp="1615741760113">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="936" height="275" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1615739263000" />
+    <state width="936" height="275" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1615741760113" />
     <state width="936" height="347" key="GridCell.Tab.1.bottom" timestamp="1615661467295">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
