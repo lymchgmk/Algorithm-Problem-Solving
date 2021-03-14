@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8afed405-a3a1-4a9f-8954-9d0dd53ebe1f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/코딩테스트 연습/스택 큐/주식가격.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/연습.py" beforeDir="false" afterPath="$PROJECT_DIR$/연습.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/코딩테스트 연습/스택 큐/다리를 지나는 트럭.py" beforeDir="false" afterPath="$PROJECT_DIR$/코딩테스트 연습/스택 큐/다리를 지나는 트럭.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,28 +38,7 @@
       <recent name="C:\Users\lymch\OneDrive\바탕 화면\Algo_lymchgmk\Progammers\코딩테스트 연습\깊이 너비 우선 탐색" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.연습">
-    <configuration name="다리를 지나는 트럭" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Progammers" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/코딩테스트 연습/스택 큐" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/코딩테스트 연습/스택 큐/다리를 지나는 트럭.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.주식가격">
     <configuration name="신규 아이디 추천" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Progammers" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -145,6 +123,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="다리를 지나는 트럭" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Progammers" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/코딩테스트 연습/스택 큐" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/코딩테스트 연습/스택 큐/다리를 지나는 트럭.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="네트워크" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Progammers" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -158,6 +157,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/코딩테스트 연습/깊이 너비 우선 탐색/네트워크.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="주식가격" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Progammers" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/코딩테스트 연습/스택 큐" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/코딩테스트 연습/스택 큐/주식가격.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -210,9 +230,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.연습" />
+        <item itemvalue="Python.주식가격" />
         <item itemvalue="Python.다리를 지나는 트럭" />
-        <item itemvalue="Python.여행경로" />
         <item itemvalue="Python.단어 변환" />
         <item itemvalue="Python.네트워크" />
       </list>
@@ -232,38 +251,38 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="936" height="278" key="GridCell.Tab.0.bottom" timestamp="1615661214195">
+    <state width="936" height="275" key="GridCell.Tab.0.bottom" timestamp="1615730145031">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="936" height="278" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1615661214195" />
-    <state width="936" height="278" key="GridCell.Tab.0.center" timestamp="1615661214195">
+    <state width="936" height="275" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1615730145031" />
+    <state width="936" height="275" key="GridCell.Tab.0.center" timestamp="1615730145031">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="936" height="278" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1615661214195" />
-    <state width="936" height="278" key="GridCell.Tab.0.left" timestamp="1615661214195">
+    <state width="936" height="275" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1615730145031" />
+    <state width="936" height="275" key="GridCell.Tab.0.left" timestamp="1615730145030">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="936" height="278" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1615661214195" />
-    <state width="936" height="278" key="GridCell.Tab.0.right" timestamp="1615661214195">
+    <state width="936" height="275" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1615730145030" />
+    <state width="936" height="275" key="GridCell.Tab.0.right" timestamp="1615730145031">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="936" height="278" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1615661214195" />
-    <state width="936" height="347" key="GridCell.Tab.1.bottom" timestamp="1615630091243">
+    <state width="936" height="275" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1615730145031" />
+    <state width="936" height="347" key="GridCell.Tab.1.bottom" timestamp="1615661467295">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="936" height="347" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1615630091243" />
-    <state width="936" height="347" key="GridCell.Tab.1.center" timestamp="1615630091243">
+    <state width="936" height="347" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1615661467295" />
+    <state width="936" height="347" key="GridCell.Tab.1.center" timestamp="1615661467295">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="936" height="347" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1615630091243" />
-    <state width="936" height="347" key="GridCell.Tab.1.left" timestamp="1615630091243">
+    <state width="936" height="347" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1615661467295" />
+    <state width="936" height="347" key="GridCell.Tab.1.left" timestamp="1615661467295">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="936" height="347" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1615630091243" />
-    <state width="936" height="347" key="GridCell.Tab.1.right" timestamp="1615630091243">
+    <state width="936" height="347" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1615661467295" />
+    <state width="936" height="347" key="GridCell.Tab.1.right" timestamp="1615661467295">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="936" height="347" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1615630091243" />
+    <state width="936" height="347" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1615661467295" />
     <state x="922" y="162" key="SettingsEditor" timestamp="1615475321581">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
