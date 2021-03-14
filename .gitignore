@@ -146,3 +146,5 @@ dmypy.json
 .prof
 
 # End of https://www.toptal.com/developers/gitignore/api/python
+Progammers/.idea/workspace.xml
+Progammers/연습.py
