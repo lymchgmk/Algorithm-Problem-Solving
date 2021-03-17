@@ -1,15 +1,19 @@
+import collections
+
+
 def solution(prices):
     answer = []
-    for i in range(len(prices)):
-        price = prices[i]
-        stack = []
-        for j in range(i+1, len(prices)):
-            if price <= prices[j]:
-                stack.append(prices[j])
+    prices = collections.deque(prices)
+    while prices:
+        tmp = prices.popleft()
+        cnt = 0
+        for price in prices:
+            if tmp <= price:
+                cnt += 1
             else:
-                stack.append(0)
+                cnt += 1
                 break
-        answer.append(len(stack))
+        answer.append(cnt)
     
     return answer
 
