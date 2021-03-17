@@ -1,15 +1,14 @@
-import sys
-sys.stdin = open('위장.txt')
+import collections
 
-from collections import Counter
-from functools import reduce
-
-clothes = [["yellow_hat", "headgear"], ["blue_sunglasses", "eyewear"], ["green_turban", "headgear"]]
 
 def solution1(clothes):
-    cnt = Counter([kind for name, kind in clothes])
-    print(cnt.values())
-    answer = reduce(lambda x, y: x*(y+1), cnt.values()) - 1
-    return answer
+    clothes_counter = collections.Counter([cloth[1] for cloth in clothes])
+    answer = 1
+    for c in clothes_counter.values():
+        answer *= c+1
+        
+    return answer-1
 
+
+clothes = [["yellowhat", "headgear"], ["bluesunglasses", "eyewear"], ["green_turban", "headgear"]]
 print(solution1(clothes))
