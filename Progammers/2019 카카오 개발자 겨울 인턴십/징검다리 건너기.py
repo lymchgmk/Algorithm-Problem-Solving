@@ -38,9 +38,26 @@ def solution_2(stones, k):
             loc_max = max(window)
             global_min = min(global_min, loc_max)
     return global_min
+
+
+# 풀이 2. 슬라이딩 윈도우
+# 이 경우 max 부분에서 시간이 오버됨?
+def solution_2(stones, k):
+    from collections import deque
+    window = deque(stones[:k])
+    loc_max = max(window)
+    global_min = loc_max
+    for i in range(k, len(stones)):
+        leftpop = window.popleft()
+        window.append(stones[i]) #rightappend
+        if leftpop == loc_max:
+            loc_max = max(window)
+            global_min = min(global_min, loc_max)
+    return global_min
     
 
 
 stones = [2, 4, 5, 3, 2, 1, 4, 2, 5, 1]
 k = 3
 print(solution_1(stones, k))
+print(solution_2(stones, k))
