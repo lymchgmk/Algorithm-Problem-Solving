@@ -1,27 +1,22 @@
-import collections
-
-
 def solution(gems):
-    L = len(gems)
-    ALL_GEMS = len(set(gems))
-    answer = [0, L-1]
-    left, right = 0, 0
-    gem_dict = {gems[0]: 1}
-    while left < L and right < L:
-        if len(gem_dict) == ALL_GEMS:
-            if right - left < answer[1] - answer[0]:
-                answer = [left, right]
-            else:
-                gem_dict[gems[left]] -= 1
-                if gem_dict[gems[1]] == 0:
-                    del gem_dict[gems[left]]
-                left += 1
-        else:
-            right += 1
-            if right == ALL_GEMS:
-                break
-            else:
-                gem_dict[gems[right]] = g
+    answer = [0,len(gems)]
+    dic = {}
+    kind = len(set(gems))
+    flag = False
+    mini = 0
+    min_gem = gems[0]
+    for i, gem in enumerate(gems):
+        dic[gem] = i
+        if min_gem == gem:
+            mini = min(dic.values())
+            min_gem = gems[mini]
+        if flag == False and len(dic) == kind:
+            flag = True
+        if flag == True:
+            mn, mx = mini, i
+            if answer[1]-answer[0] > mx - mn:
+                answer = [mn+1, mx+1]
+    return answer
             
     
 
