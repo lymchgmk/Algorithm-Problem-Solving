@@ -1,11 +1,7 @@
 def solution(d, budget):
     d.sort()
-    
-    while sum(d) != budget:
-        if sum(d) - budget in d:
-            return len(d)-1
-        d.pop(0)
-    
+    while sum(d) > budget:
+        d.pop()
     return len(d)
 
 
