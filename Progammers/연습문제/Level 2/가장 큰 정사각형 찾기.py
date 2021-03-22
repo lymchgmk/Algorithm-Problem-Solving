@@ -1,19 +1,13 @@
 def solution(board):
-    def find_n_square(p, n):
-        for i in range(p[0], p[0]+n):
-            for j in range(p[1], p[1]+n):
-                if 0<=i<len(board) and 0<=j<len(board):
-                    if not board[i][j]:
-                        return False
-        return True
-    
-    for n in range(len(board), 0, -1):
-        for i in range(len(board)):
-            for j in range(len(board)):
-                if find_n_square([i, j], n):
-                    return n*n
-                
+    L_x, L_y = len(board), len(board[0])
+    _max = max(max(board))
+    for i in range(1, L_x):
+        for j in range(1, L_y):
+            if board[i][j]:
+                board[i][j] = min(board[i-1][j], board[i][j-1], board[i-1][j-1]) + 1
+                _max = max(_max, board[i][j])
+    return _max**2
 
 
-board = [[0,1,1,1],[1,1,1,1],[1,1,1,1],[0,0,1,0]]
+board = [[1,0],[0,0]]
 print(solution(board))
