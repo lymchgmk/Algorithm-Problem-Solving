@@ -24,7 +24,8 @@ def fibo_3(N):
     for i in range(2, N+1):
         cache[i] = cache[i-1] + cache[i-2]
     return cache[N]
-
+import sys
+sys.setrecursionlimit()
 
 # 재귀적 동적 계획법 풀이
 def fibo_4(N):
