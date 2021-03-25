@@ -1,19 +1,22 @@
 def solution(p):
-    def proper_brackets:
-        pass
-    
-    def perfect_brackets:
-        pass
-    
     # 1
     if not p:
-        return ''
+        return p
+    
     # 2
     u, v = '', ''
-    while p:
+    idx = 0
+    while True:
+        idx += 1
+        u = p[:idx]
+        if u.count('(') == u.count(')'):
+            break
     
+    # 3.
+    if 
+    
+    return 0
 
 
 p = "()))((()"
 print(solution(p))
-print(solution(p) == "()(())()")
