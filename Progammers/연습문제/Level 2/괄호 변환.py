@@ -1,19 +1,25 @@
 def solution(p):
+    def isBalanced():
+        pass
+    
+    def isProper():
+        pass
+    
     # 1
     if not p:
         return p
     
     # 2
-    u, v = '', ''
-    idx = 0
-    while True:
+    u, v = p[:1], p[1:]
+    idx = 1
+    while u.count('(') != u.count(')'):
         idx += 1
         u = p[:idx]
-        if u.count('(') == u.count(')'):
-            break
+        v = p[idx:]
     
     # 3.
-    if 
+    if isProper(u):
+        answer += u + solution(v)
     
     return 0
 
