@@ -14,7 +14,7 @@ def union(x, y):
         p[py] = px
     else:
         p[px] = py
-        if rank[px] == rank[py]
+        if rank[px] == rank[py]:
             rank[py] += 1
 
 
