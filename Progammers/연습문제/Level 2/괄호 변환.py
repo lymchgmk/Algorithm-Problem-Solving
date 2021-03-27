@@ -1,13 +1,19 @@
 def solution(p):
-    def isBalanced():
-        pass
-    
-    def isProper():
-        pass
+    def isProper(u):
+        stack = []
+        for char in u:
+            if char == '(':
+                stack.append(char)
+            else:
+                if not stack:
+                    return False
+                else:
+                    stack.pop()
+        return True
     
     # 1
     if not p:
-        return p
+        return ''
     
     # 2
     u, v = p[:1], p[1:]
@@ -19,10 +25,18 @@ def solution(p):
     
     # 3.
     if isProper(u):
-        answer += u + solution(v)
+        return u + solution(v)
     
-    return 0
-
+    # 4.
+    else:
+        answer = '(' + solution(v) + ')'
+        for char in u[1:-1]:
+            if char == '(':
+                answer += ')'
+            else:
+                answer += '('
+        return answer
+        
 
 p = "()))((()"
 print(solution(p))
