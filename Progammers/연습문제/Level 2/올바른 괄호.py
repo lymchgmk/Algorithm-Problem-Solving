@@ -1,15 +1,16 @@
 def solution(s):
-    q = []
-    for char in s:
-        if char == '(':
-            q.append(char)
+    answer = True
+    Queue = []
+    for i in s:
+        if i == '(':
+            Queue.append('(')
         else:
             try:
-                q.pop()
-            except IndexError:
+                Queue.pop()
+            except ValueError:
                 return False
-    
-    if not len(q):
+            
+    if len(Queue) == 0:
         return True
     else:
         return False
