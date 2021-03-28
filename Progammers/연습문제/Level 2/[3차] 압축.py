@@ -15,10 +15,6 @@ def solution(msg):
         result.append(dic[buffer])
     
     return result
-            
-        
-    # 1. 없으면 dic에 추가 + 한 칸 줄여서 출력
-    # 2. 있으면 계속 늘리기, 없으면 1로
 
 msg = 'KAKAO'
 print(solution(msg))
