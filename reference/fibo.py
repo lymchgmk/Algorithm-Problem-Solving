@@ -1,7 +1,8 @@
 # 기본 재귀적 풀이, O(N) = 2^N
 def fibo_1(N):
     return fibo_1(N-1) + fibo_1(N-2) if N>=2 else N
-
+import sys
+sys.setrecursionlimit()
 # 반복적 풀이, O(N) = N
 def fibo_2(N):
     if N < 2:
