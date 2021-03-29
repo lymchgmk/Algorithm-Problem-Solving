@@ -19,7 +19,7 @@ def solution(relation):
     answer = set(final[:])
     for i in range(len(final)):
         for j in range(i + 1, len(final)):
-            if len(final[i]) == len(set(final[i]).intersection(set(final[j]))):
+            if len(final[i]) == len(set(final[i]) & set(final[j])):
                 answer.discard(final[j])
     
     return len(answer)
