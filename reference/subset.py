@@ -4,5 +4,4 @@ def powerset(s):
 		yield [ss for ss, mask in zip(s, masks) if mask & i]
 		
 		
-		
 print(list(powerset([1,2,3,4])))
