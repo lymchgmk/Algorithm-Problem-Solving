@@ -1,21 +1,12 @@
-BOARD_SIZE = 8
+def solution(n):
+    def queens(n, i=0, a=[], b=[], c=[]):
+        if i < n:
+            for j in range(n):
+                if j not in a and i + j not in b and i - j not in c:
+                    yield from queens(n, i + 1, a + [j], b + [i + j], c + [i - j])
+        else:
+            yield a
+    
+    return sum([1 for _ in queens(n)])
 
-
-def under_attack(col, queens):
-    return col in queens or any(abs(col - x) == len(queens) - i for i, x in enumerate(queens))
-
-
-def solve(n):
-    solutions = [[]]
-    for row in range(n):
-        solutions = (solution + [i + 1]
-                     for solution in solutions  # first for clause is evaluated immediately,
-                     # so "solutions" is correctly captured
-                     for i in range(BOARD_SIZE)
-                     if not under_attack(i + 1, solution))
-    return solutions
-
-
-answers = solve(BOARD_SIZE)
-first_answer = next(answers)
-print(list(enumerate(first_answer, start=1)))
+print(solution(5))
