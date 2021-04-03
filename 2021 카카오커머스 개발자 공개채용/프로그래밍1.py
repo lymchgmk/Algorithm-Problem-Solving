@@ -23,5 +23,6 @@ def solution(n, p, c):
     
     return [ans % 101 for ans in answer]
 
+
 n, p, c = 2, 3, 4
 print(solution(n, p, c))
