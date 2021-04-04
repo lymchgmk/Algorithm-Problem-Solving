@@ -1,5 +1,4 @@
-import datetime
+from itertools import product
 
-
-print(datetime.datetime.utcnow())
-print(datetime.datetime.now())
+_list = [['-', 'java', 'python', 'cpp'], ['-', 'backend', 'frontend'], ['-', 'junior', 'senior'], ['-', 'pizza', 'chicken']]
+print(list(product(*_list)))
