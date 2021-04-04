@@ -1,42 +1,34 @@
-def solution(n, build_frame):
-    def can_build(x, y, a):
-        if a == 0:
-            if x == 0 or board[x-1][y] == 1:
+# 파이썬
+def impossible(result):
+    COL, ROW = 0, 1
+    for x, y, a in result:
+        if a == COL:  # 기둥일 때
+            if y != 0 and (x, y - 1, COL) not in result and \
+                    (x - 1, y, ROW) not in result and (x, y, ROW) not in result:
                 return True
-        else:
-            if board[x][y] == 1 or board[x][y]
+        else:  # 보일 때
+            if (x, y - 1, COL) not in result and (x + 1, y - 1, COL) not in result and \
+                    not ((x - 1, y, ROW) in result and (x + 1, y, ROW) in result):
+                return True
+    return False
+
+
+def solution(n, build_frame):
+    result = set()
     
-    answer = [[]]
-    board = [[0]*(n+1) for _ in range(n+1)]
+    for x, y, a, build in build_frame:
+        item = (x, y, a)
+        if build:  # 추가일 때
+            result.add(item)
+            if impossible(result):
+                result.remove(item)
+        elif item in result:  # 삭제할 때
+            result.remove(item)
+            if impossible(result):
+                result.add(item)
+    answer = map(list, result)
     
-    for b in board:
-        print(b)
-    print()
-    
-    for x, y, a, b in build_frame:
-        # a: 0 기둥, 1 보 / b: 0 삭제, 1 설치
-        print(x, y, a, b)
-        if a == 0:
-            if b == 0:
-                board[x][y] = board[x - 1][y] = 0
-            else:
-                board[x][y] = board[x - 1][y] = 1
-                
-        else:
-            if b == 0:
-                board[x][y] = board[x][y-1] = 0
-            else:
-                board[x][y] = board[x][y-1] = 1
-            
-        for b in board:
-            print(b)
-        print()
-        
-    for i in range(n+1):
-        for j in range(n+1):
-            pass
-    
-    return answer
+    return sorted(answer, key=lambda x: (x[0], x[1], x[2]))
 
 
 n = 5
