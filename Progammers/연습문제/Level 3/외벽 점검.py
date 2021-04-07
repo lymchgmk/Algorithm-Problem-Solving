@@ -16,20 +16,20 @@ def solution(n, weak, dist):
             current = deq.popleft()
             # 검사 조회
             for cur in current:
-                # fix 할 수 있는 것들만 temp로 저장
+                # fix 할 수 없는 것들을 temp로 저장
                 left, right = cur, (cur + dst) % n
                 if left < right:
                     temp = tuple(filter(lambda x: x < left or x > right, current))
                 else:
                     temp = tuple(filter(lambda x: x < left and x > right, current))
                 
-                # 하나도 검사 못하는 경우
+                # 다 fix 가능한 경우
                 if len(temp) == 0:
                     return idx + 1
                 else:
                     if temp not in visited:
                         visited.add(temp)
-                        deq.append(list(temp))
+                        deq.append(temp)
     return -1
 
 
