@@ -1,4 +1,4 @@
-from datetime import datetime, time, timedelta
+from datetime import time
 
 
 def solution(n, t, m, timetable):
@@ -14,14 +14,13 @@ def solution(n, t, m, timetable):
             if bus[0] >= crew:
                 bus[1] -= 1
                 break
-    
     print(buses)
     
     return answer
 
 
-n = 2
-t = 10
-m = 2
-timetable = ["09:10", "09:09", "08:00"]
+n = 1
+t = 1
+m = 5
+timetable = ["00:01", "00:01", "00:01", "00:01", "00:01"]
 print(solution(n, t, m, timetable))
