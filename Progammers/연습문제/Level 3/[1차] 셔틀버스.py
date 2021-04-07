@@ -16,6 +16,8 @@ def solution(n, t, m, timetable):
                 break
     print(buses)
     
+    # 마지막 버스에 자리가 있다 / 없다
+    
     return answer
 
 
