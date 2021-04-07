@@ -1,13 +1,14 @@
-from datetime import time, timedelta
+from datetime import datetime, time, timedelta
 
 
 def solution(n, t, m, timetable):
     answer = ''
-    td = timedelta(minutes=t)
-    print(list(bus))
-    for ttb in timetable:
-        h, m = map(int, ttb.split(':'))
-        tm = time(hour=h, minute=m)
+    buses = [[datetime(2000, 1, 1, 9, 0, 0) + timedelta(minutes=t)*i, n] for i in range(n)]
+    crews = [time(*map(int, ttb.split(':'))) for ttb in timetable]
+    crews.sort()
+    
+    print(buses)
+    
     return answer
 
 
