@@ -21,17 +21,18 @@ def solution(play_time, adv_time, logs):
         dt_log_start, dt_log_end = dt.timedelta(hours=start_h, minutes=start_m, seconds=start_s), dt.timedelta(hours=end_h, minutes=end_m, seconds=end_s)
         dt_logs.append([dt_log_start, dt_log_end])
         
-    answer = []
+    answer = [dt.timedelta(seconds=0), dt.timedelta(seconds=0)]
     for adv_start in range((dt_play_time-dt_adv_time).seconds + 1):
         dt_adv_start = dt.timedelta(seconds=adv_start)
         dt_adv_end = dt_adv_start + dt_adv_time
         adv_run_time_sum = dt.timedelta(seconds=0)
         for dt_log_start, dt_log_end in dt_logs:
             adv_run_time_sum += adv_run_time(dt_log_start, dt_log_end, dt_adv_start, dt_adv_end)
-        answer.append([adv_run_time_sum, adv_start])
-    answer.sort(key=lambda x: (-x[0], x[1]))
+        if answer[0] < adv_run_time_sum:
+            answer = [adv_run_time_sum, dt_adv_start]
 
-    return str(dt.timedelta(seconds=answer[0][1])).zfill(8)
+    return str(answer[1]).zfill(8)
+
 
 play_time = "02:03:55"
 adv_time = "00:14:15"
