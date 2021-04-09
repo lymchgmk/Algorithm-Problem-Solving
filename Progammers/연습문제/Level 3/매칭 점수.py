@@ -7,7 +7,7 @@ def solution(word, pages):
     linked_urls = defaultdict(str)
     for page in pages:
         page_url = re.findall('<meta property="og:url" content="https://(.*?)"/>', page)[0]
-        base_scores[page_url] = re.sub("[^a-z]", ".", page.lower()).split('.').count(word.lower())
+        base_scores[page_url] = re.split(r'[^a-z]', page.lower()).count(word.lower())
         linked_urls[page_url] = re.findall('<a href="https://(.*?)">', page)
 
     link_scores = defaultdict(float)
