@@ -10,8 +10,12 @@ def solution(word, pages):
         current_page_url = re.search('<meta property="og:url" content="https://(.*)"/>', page).group(1)
         
         # 기본 점수
-        basic_point = len(re.findall(word, page, re.IGNORECASE))
-        basic_points_dict[current_page_url] = basic_point
+        pattern = r"[^a-zA-Z](" + str(word) + r")[^a-zA-Z]"
+        print(pattern)
+
+        basic_point = re.findall(pattern, page, re.IGNORECASE)
+        basic_points_dict[current_page_url] = len(basic_point)
+        print(basic_point)
         
         # 외부 링크 수
         a_links = re.findall('<a href="https://(.*)">', page)
@@ -23,12 +27,6 @@ def solution(word, pages):
         link_points_dict[current_page] = basic_points_dict[current_page] / len(linked_pages)
         
     # 매칭 점수
-    print(basic_points_dict)
-    print(a_links_dict)
-    print(link_points_dict)
-    
-    
-    
     matching_points_dict = basic_points_dict.copy()
     for current_page, linked_pages in a_links_dict.items():
         for linked_page in linked_pages:
@@ -36,7 +34,6 @@ def solution(word, pages):
                 matching_points_dict[linked_page] += link_points_dict[current_page]
             except KeyError:
                 continue
-    print(matching_points_dict)
 
     # answer index 추출
     result = [[idx, val[1]] for idx, val in enumerate(matching_points_dict.items())]
