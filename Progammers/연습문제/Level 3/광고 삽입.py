@@ -5,9 +5,9 @@ def solution(play_time, adv_time, logs):
     def adv_run_time(log_start, log_end, adv_start, adv_end):
         if adv_end < log_start or adv_start > log_end:
             return dt.timedelta(seconds=0)
-        else:
-            tmp = sorted([log_start, log_end, adv_start, adv_end])
-            return tmp[2] - tmp[1]
+        
+        tmp = sorted([log_start, log_end, adv_start, adv_end])
+        return tmp[2] - tmp[1]
     
     play_h, play_m, play_s = map(int, play_time.split(':'))
     dt_play_time = dt.timedelta(hours=play_h, minutes=play_m, seconds=play_s)
@@ -21,17 +21,17 @@ def solution(play_time, adv_time, logs):
         dt_log_start, dt_log_end = dt.timedelta(hours=start_h, minutes=start_m, seconds=start_s), dt.timedelta(hours=end_h, minutes=end_m, seconds=end_s)
         dt_logs.append([dt_log_start, dt_log_end])
         
-    answer = dt.timedelta(seconds=0)
+    answer = []
     for adv_start in range((dt_play_time-dt_adv_time).seconds + 1):
         dt_adv_start = dt.timedelta(seconds=adv_start)
         dt_adv_end = dt_adv_start + dt_adv_time
-        _sum = dt.timedelta(seconds=0)
+        adv_run_time_sum = dt.timedelta(seconds=0)
         for dt_log_start, dt_log_end in dt_logs:
-            _sum += adv_run_time(dt_log_start, dt_log_end, dt_adv_start, dt_adv_end)
-        answer = max(answer, _sum)
+            adv_run_time_sum += adv_run_time(dt_log_start, dt_log_end, dt_adv_start, dt_adv_end)
+        answer.append([adv_run_time_sum, adv_start])
+    answer.sort(key=lambda x: (-x[0], x[1]))
 
-    return str(answer)
-
+    return str(dt.timedelta(seconds=answer[0][1])).zfill(8)
 
 play_time = "02:03:55"
 adv_time = "00:14:15"
