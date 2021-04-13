@@ -18,8 +18,7 @@ def solution(board):
                         nxt_cost = bfs_board[cur_x][cur_y][0] + 600
                     
                     if bfs_board[nxt_x][nxt_y][0] == 0 or bfs_board[nxt_x][nxt_y][0] > nxt_cost:
-                        bfs_board[nxt_x][nxt_y][0] = nxt_cost
-                        bfs_board[nxt_x][nxt_y][1] = nxt_dir
+                        bfs_board[nxt_x][nxt_y] = [nxt_cost, nxt_dir]
                         deq.append([nxt_x, nxt_y])
         
         return bfs_board[-1][-1][0]
