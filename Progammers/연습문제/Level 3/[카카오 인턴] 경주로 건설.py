@@ -27,6 +27,7 @@ def solution(board):
     cost_board = [[[board[y][x], 0, None] for x in range(L)] for y in range(L)]
     cost_board[0][0][2] = 'start_dir'
     
+    # start_dir을 아래로 / 오른쪽으로 2가지 경우로 실행한 뒤, 최소값
     bfs(0, 0, 'start_dir')
     
     for c in cost_board:
