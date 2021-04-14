@@ -3,16 +3,16 @@ from copy import deepcopy
 
 def solution(board):
     def bfs(left_wing, right_wing):
-        deq = deque([[left_wing, right_wing]])
-        while deq:
-            cur_left_wing, cur_right_wing = deq.popleft()
-            # 현재 상태 가로인지 세로인지 체크
-            # 가로
-            if cur_left_wing[0] - cur_right_wing[0]:
-                if cur_right_wing + 1 < len(board) and board[cur_right_wing[0]][cur_right_wing + 1]
-            # 세로
-            else:
-                pass
+        cnt = 0
+        deq = deque([left_wing, right_wing])
+        while True:
+            tmp = deque()
+            
+            if board[-1][-1] == 2:
+                return cnt
+            
+            if not deq:
+                deq, tmp = tmp, deque()
     
     bfs([0, 0], [0, 1])
     return
