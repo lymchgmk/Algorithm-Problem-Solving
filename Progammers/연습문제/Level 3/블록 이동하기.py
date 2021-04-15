@@ -5,79 +5,55 @@ def solution(board):
     def horizontal_or_vertical(p1, p2):
         return p1[0] == p2[0]
     
-    def bfs(left_wing, right_wing):
-        L = len(board)
-        cnt = 0
-        cur_deq, nxt_deq = deque([left_wing, right_wing]), deque()
-        while board[-1][-1] != 2:
-            while cur_deq:
-                cur_left_wing, cur_right_wing = sorted(cur_deq.popleft())
-                # horizontal
-                if horizontal_or_vertical(cur_left_wing, cur_right_wing):
-                    left_x, left_y = cur_left_wing
-                    right_x, right_y = cur_right_wing
-                    # 수평
-                    if 0 <= left_y - 1: nxt_deq.append([[left_x - 1, left_y], [right_x - 1, right_y]])
-                    if right_y + 1 < L: nxt_deq.append([[left_x - 1, left_y], [right_x - 1, right_y]])
-                    # 수직
-                    if 0 <= left_x - 1: nxt_deq.append([[left_x - 1, left_y], [right_x - 1, right_y]])
-                    if right_x + 1 < L: nxt_deq.append([[left_x - 1, left_y], [right_x - 1, right_y]])
-                    # 회전
-                    for i in range(2):
-                        for j in range(2):
-                            if 0<=left_x+i<L and 0<=left_y+j<L:
-                                if board[left_x+i][left_y+j] == 1:
-                                    can_rotate = False
-                                    break
-                    else:
-                        can_rotate = True
-                    
-                    if can_rotate:
-                        nxt_deq.append([[left_x, left_y], [left_x + 1, left_y]])
-                        nxt_deq.append([[left_x, left_y + 1], [left_x + 1, left_y + 1]])
-                    
-                        
-                else:
-                    left_x, left_y = cur_left_wing
-                    right_x, right_y = cur_right_wing
-                    # 수평
-                    if 0 <= left_y - 1: nxt_deq.append([[left_x - 1, left_y], [right_x - 1, right_y]])
-                    if right_y + 1 < L: nxt_deq.append([[left_x - 1, left_y], [right_x - 1, right_y]])
-                    # 수직
-                    if 0 <= left_x - 1: nxt_deq.append([[left_x - 1, left_y], [right_x - 1, right_y]])
-                    if right_x + 1 < L: nxt_deq.append([[left_x - 1, left_y], [right_x - 1, right_y]])
-                    # 회전
-                    for i in range(2):
-                        for j in range(2):
-                            if 0 <= left_x + i < L and 0 <= left_y + j < L:
-                                if board[left_x + i][left_y + j] == 1:
-                                    can_rotate = False
-                                    break
-                    else:
-                        can_rotate = True
+    def can_move(cur1, cur2, new_board):
+        Y, X = 0, 1
+        cand = []
+        dirs = [(-1, 0), (1, 0), (0, -1), (0, 1)]
+        
+        for dy, dx in dirs:
+            nxt1 = (cur1[Y] + dy, cur1[X] + dx)
+            nxt2 = (cur2[Y] + dy, cur2[X] + dx)
+            if new_board[nxt1[Y]][nxt1[X]] == 0 and new_board[nxt2[Y]][nxt2[X]] == 0:
+                cand.append((nxt1, nxt2))
+        
+        if cur1[Y] == cur2[Y]:
+            UP, DOWN = -1, 1
+            for d in [UP, DOWN]:
+                if new_board[cur1[Y] + d][cur1[X]] == 0 and new_board[cur2[Y]+d][cur2[X]] == 0:
+                    cand.append((cur1, (cur1[Y] + d, cur1[X])))
+                    cand.append((cur2, (cur2[Y] + d, cur2[X])))
+        else:
+            LEFT, RIGHT = -1, 1
+            for d in [LEFT, RIGHT]:
+                if new_board[cur1[Y]][cur1[X] + d] == 0 and new_board[cur2[Y]][cur2[X] + d] == 0:
+                    cand.append(((cur1[Y], cur1[X] + d), cur1))
+                    cand.append(((cur2[Y], cur2[X] + d), cur2))
+        
+        return cand
     
-                    if can_rotate:
-                        nxt_deq.append([[left_x, left_y], [left_x + 1, left_y]])
-                        nxt_deq.append([[left_x, left_y + 1], [left_x + 1, left_y + 1]])
-                
-            for nxt_left_wing, nxt_right_wing in nxt_deq:
-                board[nxt_left_wing[0]][nxt_left_wing[1]] = 2
-                board[nxt_right_wing][0][nxt_right_wing[1]] = 2
-                
-            cur_deq, nxt_deq = nxt_deq, deque()
-            
-            cnt += 1
-
-        return cnt
-
-    return bfs([0, 0], [0, 1])
+    N = len(board)
+    new_board = [[1] * (N+2) for _ in range(N+2)]
+    for i in range(N):
+        for j in range(N):
+            new_board[i+1][j+1] = board[i][j]
+    
+    que = deque([((1, 1), (1, 2), 0)])
+    confirm = set([((1, 1), (1, 2))])
+    
+    while que:
+        cur1, cur2, count = que.popleft()
+        if cur1 == (N, N) or cur2 == (N, N):
+            return count
+        
+        else:
+            for nxt in can_move(cur1, cur2, new_board):
+                if nxt not in confirm:
+                    que.append((*nxt, count+1))
+                    confirm.add(nxt)
+    
     
     
 
 
 board = [[0, 0, 0, 1, 1],[0, 0, 0, 1, 0],[0, 1, 0, 1, 1],[1, 1, 0, 0, 1],[0, 0, 0, 0, 0]]
-
-for b in board:
-    print(b)
-    
 print(solution(board))
