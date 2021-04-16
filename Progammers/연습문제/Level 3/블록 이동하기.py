@@ -1,5 +1,5 @@
 from collections import deque
-from copy import deepcopy
+
 
 def solution(board):
     def horizontal_or_vertical(p1, p2):
