@@ -16,7 +16,6 @@ def solution(a, edges):
         for nxt in graph[cur]:
             if nxt != root:
                 dfs(nxt, cur)
-
         a[root] += a[cur]
         answer += abs(a[cur])
         a[cur] = 0
@@ -25,6 +24,7 @@ def solution(a, edges):
     dfs(0, 0)
 
     return answer
+    
     
 a = [-5,0,2,1,2]
 edges = [[0,1],[3,4],[2,3],[0,3]]
