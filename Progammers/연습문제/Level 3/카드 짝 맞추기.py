@@ -11,8 +11,7 @@ def solution(board, r, c):
         def _how_many(cur_pos, card_pos):
             pass
         
-        def _flip():
-            pass
+        for card_pos in _find_pos(cur_pos, )
         
         return [[board, [r, c]], cnt]
     # 카드를 다 삭제하면 return
