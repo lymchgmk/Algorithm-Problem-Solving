@@ -1,39 +1,40 @@
 def solution(a, edges):
-    class Node:
-        def __init__(self):
-            self.parent = None
+    def find_leaf(graph):
+        return [node for node in graph if len(graph[node]) == 1]
+    
+    def find_root(graph):
+        return max(graph, key=lambda x: len(graph[x]))
+    
+    def dfs(a):
+        answer = 0
+        stack = find_leaf(graph)
+        root = find_root(graph)
+        while stack:
+            cur = stack.pop()
+            for nxt in graph[cur]:
+                if nxt == root:
+                    break
+                answer += abs(a[cur])
+                a[nxt] += a[cur]
+                a[cur] = 0
+                stack.append(nxt)
+                
+        return answer
+        
+    if not any(a):
+        return 0
     
     if sum(a):
         return -1
     
-    tree = {idx: Node() for idx, val in enumerate(a)}
-    for key1, key2 in edges:
-        if not tree[key1].parent:
-            tree[key1].parent = key2
-        else:
-            old_parent = tree[key1].parent
-            tree[old_parent].parent = key1
-            tree[key1].parent = key2
-
-    for key in tree:
-        if tree[key].parent is None:
-            root = tree[key]
+    graph = {i: [] for i in range(len(a))}
+    for v1, v2 in edges:
+        graph[v1].append(v2)
+        graph[v2].append(v1)
     
-    answer = 0
-    while root.child:
-        for key in tree:
-            if not tree[key].child:
-                tree[tree[key].parent].child.remove(key)
-                answer += abs(a[key])
-                a[tree[key].parent] += a[key]
-                a[key] = 0
-            
-    if not any(a):
-        return answer
-    else:
-        return -1
-
-
+    return dfs(a)
+    
+    
 a = [-5,0,2,1,2]
 edges = [[0,1],[3,4],[2,3],[0,3]]
 print(solution(a, edges))
