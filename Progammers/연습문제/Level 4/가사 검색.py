@@ -20,10 +20,10 @@ from collections import defaultdict
 from bisect import bisect_left, bisect_right
 
 
-def count():
-    pass
-
 def solution(words, queries):
+    def _bisect(lst, start, end):
+        return bisect_right(lst, end) - bisect_left(lst, start)
+        
     answer = []
     cands = defaultdict(list)
     reversed_cands = defaultdict(list)
@@ -31,23 +31,23 @@ def solution(words, queries):
     for word in words:
         cands[len(word)].append(word)
         reversed_cands[len(word)].append(word[::-1])
-        
-    print('cand', cands)
-    print('rev_cand', reversed_cands)
     
     for cand in cands.values():
         cand.sort()
     for rev_cand in reversed_cands.values():
         rev_cand.sort()
     
-    print('cand', cands)
-    print('rev_cand', reversed_cands)
-    
     for query in queries:
         if query[0] == '?':
-            pass
+            lst = reversed_cands[len(query)]
+            start, end = query[::-1].replace('?', 'a'), query[::-1].replace('?', 'z')
         else:
-            pass
+            lst = cands[len(query)]
+            start, end = query.replace('?', 'a'), query.replace('?', 'z')
+            
+        answer.append(_bisect(lst, start, end))
+    
+    return answer
     
     
 words = ["frodo", "front", "frost", "frozen", "frame", "kakao"]
