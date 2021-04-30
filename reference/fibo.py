@@ -95,6 +95,3 @@ def fibo_6(N):
 def fibo_7(N):
     sqrt_5 = 5 ** (1/2)
     return int((1/sqrt_5) * (((1+sqrt_5)/2)**N - ((1-sqrt_5)/2)**N))
-
-
-# 피사노 주기 활용 풀이!
