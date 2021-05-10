@@ -1,38 +1,31 @@
-# def solution(words):
-#     trie = {}
-#     for word in words:
-#         cur_trie = trie
-#         for w in word:
-#             cur_trie.setdefault(w, [0, {}])
-#             cur_trie[w][0] += 1
-#             cur_trie = cur_trie[w][1]
-#
-#     result = 0
-#     for word in words:
-#         cur_trie = trie
-#         for i in range(len(word)):
-#             if cur_trie[word[i]][0] == 1:
-#                 break
-#             else:
-#                 cur_trie = cur_trie[word[i]][1]
-#         result += i+1
-#     return result
-from collections import defaultdict
-
-
 def solution(words):
     class Node:
         def __init__(self, key, cnt=0):
             self.key = key
             self.cnt = cnt
             self.children = {}
-    
-    trie = defaultdict(int)
-    for word in words:
-        for char in word:
-            if trie[char] == 0:
-            
-    
 
+    trie = {}
+    for word in words:
+        cur_trie = trie
+        for char in word:
+            if not cur_trie.get(char):
+                cur_trie[char] = Node(key=char)
+            cur_trie[char].cnt += 1
+            cur_trie = cur_trie[char].children
+           
+    result = 0
+    for word in words:
+        cur_trie = trie
+        for idx, char in enumerate(word):
+            if cur_trie[char].cnt == 1:
+                break
+            else:
+                cur_trie = cur_trie[char].children
+        # break하거나 break하지 않고 for문이 끝나거나 둘 다 잡아주려면 if-else말고 이렇게
+        result += idx + 1
+    return result
+    
+    
 words = ["go","gone","guild"]
 print(solution(words))
