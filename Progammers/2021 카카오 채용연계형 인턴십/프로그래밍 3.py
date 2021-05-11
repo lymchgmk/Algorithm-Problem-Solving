@@ -15,9 +15,6 @@ def solution(n, k, cmd):
     
     # table tail 처리
     table[n-1].after = -1
-    
-    # for key in table:
-    #     print(table[key].myself, table[key].before, table[key].after)
 
     curr_cell = table[k]
     deleted_stack = []
