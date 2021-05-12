@@ -22,7 +22,7 @@ V, E = map(int, input().split())
 edges = [list(map(int, input().split())) for _ in range(E)]
 
 # 간선을 가중치를 기준으로 정렬
-edges.sort(key=lambda x:x[2])
+edges.sort(key=lambda x: x[2])
 
 # make_set : 모든 정점에 대해 집합 생성
 p = [0] * V
