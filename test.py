@@ -1,2 +1,9 @@
-t = 'abcdefg'
-print(t[:2] + t[4:], t[2:4])
+import re
+
+
+tmp = "$5.72B"
+print(re.match(r'[-+]?[$](.+)([BM])', tmp).groups())
+
+
+
+
