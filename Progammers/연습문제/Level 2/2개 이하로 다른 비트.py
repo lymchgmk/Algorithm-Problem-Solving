@@ -8,8 +8,10 @@ def solution(numbers):
             answer.append(target)
     return answer
 
-
-# return num+(num^(num+1)+1)/4
+'''
+def solution(numbers):
+    return [((num ^ (num+1)) >> 2) + num + 1 for num in numbers]
+'''
 
 
 numbers = [2, 7]
