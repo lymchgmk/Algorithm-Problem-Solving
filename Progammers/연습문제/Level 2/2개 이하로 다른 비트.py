@@ -14,5 +14,11 @@ def solution(numbers):
 '''
 
 
+def sol2(numbers):
+    for n in numbers:
+        print(n, bin(n), bin(n ^ ((n + 1) >> 2)))
+
+
 numbers = [2, 7]
-print(solution(numbers))
+# print(solution(numbers))
+print(sol2(numbers))
