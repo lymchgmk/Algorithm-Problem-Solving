@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8afed405-a3a1-4a9f-8954-9d0dd53ebe1f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/연습문제/Level 4/지형 이동.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/연습.py" beforeDir="false" afterPath="$PROJECT_DIR$/연습.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/연습문제/Level 1/하샤드 수.py" beforeDir="false" afterPath="$PROJECT_DIR$/연습문제/Level 1/하샤드 수.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,27 +39,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Python.JadenCase 문자열 만들기">
-    <configuration name="순위 검색" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Progammers" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2021 KAKAO BLIND RECRUITMENT" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2021 KAKAO BLIND RECRUITMENT/순위 검색.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="불량 사용자" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Progammers" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -134,6 +112,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/연습문제/Level 2/최댓값과 최솟값.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="순위 검색" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Progammers" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2021 KAKAO BLIND RECRUITMENT" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2021 KAKAO BLIND RECRUITMENT/순위 검색.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -291,7 +290,6 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.최댓값과 최솟값" />
         <item itemvalue="Python.JadenCase 문자열 만들기" />
         <item itemvalue="Python.N개의 최소공배수" />
         <item itemvalue="Python.연습" />
@@ -312,50 +310,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="938" height="281" key="GridCell.Tab.0.bottom" timestamp="1616504714712">
+    <state x="1132" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1628162715243">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1616504714712" />
-    <state width="938" height="281" key="GridCell.Tab.0.center" timestamp="1616504714712">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="938" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1616504714712" />
-    <state width="938" height="281" key="GridCell.Tab.0.left" timestamp="1616504714712">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="938" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1616504714712" />
-    <state width="938" height="281" key="GridCell.Tab.0.right" timestamp="1616504714712">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="938" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1616504714712" />
-    <state width="936" height="343" key="GridCell.Tab.1.bottom" timestamp="1616426951075">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="936" height="343" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1616426951075" />
-    <state width="936" height="343" key="GridCell.Tab.1.center" timestamp="1616426951074">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="936" height="343" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1616426951074" />
-    <state width="936" height="343" key="GridCell.Tab.1.left" timestamp="1616426951074">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="936" height="343" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1616426951074" />
-    <state width="936" height="343" key="GridCell.Tab.1.right" timestamp="1616426951074">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="936" height="343" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1616426951074" />
-    <state x="922" y="162" key="SettingsEditor" timestamp="1616504682424">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="922" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1616504682424" />
-    <state x="1132" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1616418443409">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="1132" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1616418443409" />
-    <state x="653" y="116" width="745" height="807" key="find.popup" timestamp="1616419805142">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="653" y="116" width="745" height="807" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1616419805142" />
+    <state x="1132" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1628162715243" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
