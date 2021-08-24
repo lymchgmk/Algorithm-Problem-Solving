@@ -33,6 +33,37 @@ def solution(n, weak, dist):
     return -1
 
 
+def solution(n, weak, dist):
+    W, F = len(weak), len(dist)
+    # 수리한 weak 부분들
+    repaired_list = [set()]
+    # 투입해야하는 친구의 수
+    friend_count = 0
+    # 가장 멀리 갈 수 있는 친구부터
+    dist.sort(reverse=True)
+    for can_move in dist:
+        # 친구 + 1
+        friend_count += 1
+        # 친구가 수리할 수 있는 weak 부분들
+        can_repairs = []
+        for idx, weak_point in enumerate(weak):
+            start = weak_point
+            ends = weak[idx:] + [n + w for w in weak[:idx]]
+            candidates = [end % n for end in ends if abs(end - start) <= can_move]
+            can_repairs.append(set(candidates))
+        
+        can_repair_candidates = set()
+        for can_repair in can_repairs:
+            for repaired in repaired_list:
+                check = can_repair | set(repaired)
+                if len(check) == W:
+                    return friend_count
+                can_repair_candidates.add(tuple(check))
+        repaired_list = list(can_repair_candidates)
+    
+    return -1
+
+
 # n = 12
 # weak = [1, 5, 6, 10]
 # dist = [1, 2, 3, 4]
