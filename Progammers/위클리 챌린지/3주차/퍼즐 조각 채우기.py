@@ -13,8 +13,7 @@ def solution(game_board, table):
                     visited[x][y] = True
                     if _board[x][y] == target:
                         _key = (x, y)
-                        _val = set()
-                        _val.add(_key)
+                        _val = [_key]
                         stack = [_key]
                         while stack:
                             curr_x, curr_y = stack.pop()
@@ -22,13 +21,38 @@ def solution(game_board, table):
                                 post_x, post_y = curr_x + dir_x, curr_y + dir_y
                                 if 0 <= post_x < N and 0 <= post_y < N and _board[post_x][post_y] == target and not visited[post_x][post_y]:
                                     visited[post_x][post_y] = True
-                                    _val.add((post_x, post_y))
+                                    _val.append((post_x, post_y))
                                     stack.append((post_x, post_y))
                         pieces_dict[_key] = _val
         
         result_dict = defaultdict(list)
         for val in pieces_dict.values():
             result_dict[len(val)].append(val)
+        
+        tmp = {}
+        for key, values in result_dict.items():
+            tmp[key] = []
+            for value in values:
+                center_x, center_y = 0, 0
+                _set = set()
+                for x, y in value:
+                    center_x += x
+                    center_y += y
+                center_x /= len(value)
+                center_y /= len(value)
+                
+                for x, y in value:
+                    _set.add((x - center_x, y - center_y))
+            tmp[key].append(_set)
+        
+        print(tmp)
+        print()
+        
+        # 1. 무게 중심 구하기
+        
+        # 2. 각 원소애서 무게 중심 값을 빼기
+        
+        # 3. 교체
         return result_dict
     
     # 어떻게 해야 blank-piece의 모양이 같음을 알 수 있을까?
@@ -39,13 +63,6 @@ def solution(game_board, table):
     
     blanks = find_pieces(game_board, 0)
     pieces = find_pieces(table, 1)
-    
-    for tp in blanks[4]:
-        x, y = 0, 0
-        for xx, yy in tp:
-            x += xx
-            y += yy
-        return
     
 
 if __name__ == "__main__":
