@@ -13,7 +13,8 @@ def solution(game_board, table):
                     visited[x][y] = True
                     if _board[x][y] == target:
                         _key = (x, y)
-                        _val = [_key]
+                        _val = set()
+                        _val.add(_key)
                         stack = [_key]
                         while stack:
                             curr_x, curr_y = stack.pop()
@@ -21,7 +22,7 @@ def solution(game_board, table):
                                 post_x, post_y = curr_x + dir_x, curr_y + dir_y
                                 if 0 <= post_x < N and 0 <= post_y < N and _board[post_x][post_y] == target and not visited[post_x][post_y]:
                                     visited[post_x][post_y] = True
-                                    _val.append((post_x, post_y))
+                                    _val.add((post_x, post_y))
                                     stack.append((post_x, post_y))
                         pieces_dict[_key] = _val
         
@@ -31,14 +32,20 @@ def solution(game_board, table):
         return result_dict
     
     # 어떻게 해야 blank-piece의 모양이 같음을 알 수 있을까?
+    # 무게 중심이랑 각 블럭들 간의 차이를 가지고 set으로 표현하면 되나?
+    # 최소 1개에서 최대 6개까지 연결된 퍼즐 조각
     def rotate_piece():
         pass
     
     blanks = find_pieces(game_board, 0)
     pieces = find_pieces(table, 1)
     
-    for blank_size in blanks:
-        print(blank_size)
+    for tp in blanks[4]:
+        x, y = 0, 0
+        for xx, yy in tp:
+            x += xx
+            y += yy
+        return
     
 
 if __name__ == "__main__":
