@@ -32,8 +32,19 @@ def solution(game_board, table):
         return result_dict
         
     def rotate_check(blank, piece):
-        def _rotate_90(array):
-            return list(zip(*array[::-1]))
+        def _make_rotated_pieces(piece):
+            rotated_pieces = [piece]
+            for _ in range(3):
+                piece = list(zip(*piece[::-1]))
+                rotated_pieces.append([list(p) for p in piece])
+            return rotated_pieces
+        
+        def _check(blank, rotated_pieces):
+            for rotated_piece in rotated_pieces:
+                if blank == rotated_piece:
+                    return True
+            else:
+                return False
     
         # align
         blank_xs, blank_ys = [x for x, y in blank], [y for x, y in blank]
@@ -42,42 +53,135 @@ def solution(game_board, table):
         blank_min_x, blank_max_x, blank_min_y, blank_max_y = min(blank_xs), max(blank_xs), min(blank_ys), max(blank_ys)
         piece_min_x, piece_max_x, piece_min_y, piece_max_y = min(piece_xs), max(piece_xs), min(piece_ys), max(piece_ys)
         
-        aligned_blank = [[0]*(blank_max_y - blank_min_y + 1) for _ in range(blank_max_x - blank_min_x + 1)]
+        aligned_blank = [[0] * (blank_max_y - blank_min_y + 1) for _ in range(blank_max_x - blank_min_x + 1)]
+        aligned_piece = [[0] * (piece_max_y - piece_min_y + 1) for _ in range(piece_max_x - piece_min_x + 1)]
         for x, y in blank:
             aligned_blank[x-blank_min_x][y-blank_min_y] = 1
-        for x in range(blank_max_x - blank_min_x + 1):
-            aligned_blank[x] = tuple(aligned_blank[x])
-            
-        aligned_piece = [[0]*(piece_max_y - piece_min_y + 1) for _ in range(piece_max_x - piece_min_x + 1)]
         for x, y in piece:
-            aligned_piece[x-piece_min_x][y-piece_max_y] = 1
+            aligned_piece[x-piece_min_x][y-piece_min_y] = 1
         
-        # 회전 및 비교
-        # blank는 그냥 두고 piece를 회전하자
-        _check = False
-        for _ in range(4):
-            if aligned_piece != aligned_blank:
-                aligned_piece = _rotate_90(aligned_piece)
-        else:
-            _check = True
-        return _check
-
+        # _check
+        return _check(aligned_blank, _make_rotated_pieces(aligned_piece))
 
     blanks_dict = find_pieces(game_board, 0)
     pieces_dict = find_pieces(table, 1)
-
-    print(f'blanks: {blanks_dict}')
-    print(f'pieces: {pieces_dict}')
     
     answer = 0
     for size in range(1, 7):
-        if size <= 2 and blanks_dict[size]:
-            answer += size * min(len(blanks_dict[size]), len(pieces_dict[size]))
-        else:
-            if
-    
+        blanks, pieces = blanks_dict[size], pieces_dict[size]
+        for blank in blanks:
+            tmp_pieces = []
+            while pieces:
+                piece = pieces.pop()
+                if rotate_check(blank, piece):
+                    answer += size
+                    break
+                tmp_pieces.append(piece)
+            pieces = pieces + tmp_pieces
     return answer
-    
+
+
+'''
+from collections import Counter
+from dataclasses import dataclass
+from itertools import product
+
+
+@dataclass(frozen=True)
+class Pos:
+    x: int
+    y: int
+
+    def neighbors(self):
+        return [
+            Pos(self.x, self.y - 1),
+            Pos(self.x + 1, self.y),
+            Pos(self.x, self.y + 1),
+            Pos(self.x - 1, self.y),
+        ]
+
+
+def make_tile_from_positions(positions):
+    """Smallest possible representation with rotation"""
+
+    def rotate90(tile):
+        return tuple(
+            tuple(tile[i][j] for i in range(len(tile)))
+            for j in reversed(range(len(tile[0])))
+        )
+
+    positions = set(positions)
+
+    xs = [pos.x for pos in positions]
+    min_x = min(xs)
+    max_x = max(xs)
+
+    ys = [pos.y for pos in positions]
+    min_y = min(ys)
+    max_y = max(ys)
+
+    tile_representations = [
+        tuple(
+            tuple(Pos(i, j) in positions for j in range(min_y, max_y + 1))
+            for i in range(min_x, max_x + 1)
+        )
+    ]
+
+    for __ in range(3):
+        tile_representations.append(rotate90(tile_representations[-1]))
+
+    return min(tile_representations)
+
+
+def get_tile_size(tile):
+    return sum(sum(row) for row in tile)
+
+
+def parse_tiles(board, tile_value=1):
+    n = len(board)
+
+    # Add sentinel boundaries
+    sentinel = 1 - tile_value
+
+    board = [
+        [sentinel] * (n + 2),
+        *([sentinel] + row + [sentinel] for row in board),
+        [sentinel] * (n + 2),
+    ]
+
+    # Detect tiles
+    tile_positions = []
+    for i, j in product(range(1, n + 1), range(1, n + 1)):
+        if board[i][j] == tile_value:
+            stack = [Pos(i, j)]
+            squares = []
+            while stack:
+                curr = stack.pop()
+                board[curr.x][curr.y] = sentinel
+                squares.append(curr)
+                for neighbor in curr.neighbors():
+                    if board[neighbor.x][neighbor.y] == tile_value:
+                        stack.append(neighbor)
+            tile_positions.append(squares)
+
+    # Make tiles
+    tiles = [make_tile_from_positions(p) for p in tile_positions]
+
+    return tiles
+
+
+def solution(game_board, table):
+    tiles = parse_tiles(table, 1)
+    empty_spaces = parse_tiles(game_board, 0)
+
+    tile_counter = Counter(tiles)
+    empty_space_counter = Counter(empty_spaces)
+
+    used_tiles = tile_counter & empty_space_counter
+
+    return sum(get_tile_size(tile) * occ for tile, occ in used_tiles.items())
+'''
+
 
 if __name__ == "__main__":
     game_board = [[1,1,0,0,1,0],[0,0,1,0,1,0],[0,1,1,0,0,1],[1,1,0,1,1,1],[1,0,0,0,1,0],[0,1,1,1,0,0]]
