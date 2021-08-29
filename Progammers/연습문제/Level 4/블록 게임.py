@@ -1,6 +1,21 @@
 from collections import defaultdict
 
 
+def _check(key, black_blocks, board) :
+    for x, y in black_blocks[key]:
+        print(key, x, y)
+        for i in range(len(board)-y):
+            if board[i][y] != 0:
+                return False
+    return True
+
+
+def _remove(key, blocks, board):
+    for x, y in blocks[key]:
+        board[x][y] = 0
+    return board
+    
+    
 def solution(board):
     N = len(board)
     blocks = defaultdict(set)
@@ -16,11 +31,18 @@ def solution(board):
         y_min, y_max = min(y_list), max(y_list)
         rectangles[key].update([(x, y) for x in range(x_min, x_max+1) for y in range(y_min, y_max+1)])
     
-    print(blocks)
-    print(rectangles)
+    black_blocks = defaultdict(set)
+    for key in blocks.keys():
+        black_blocks[key].update(rectangles[key] - blocks[key])
+
+    answer = 0
+    _answer = 0
+    for key in blocks.keys():
+        if _check(key, black_blocks, board):
+            print(key, _check(key, black_blocks, board))
+
 
     return
-
 
 
 if __name__ == "__main__":
