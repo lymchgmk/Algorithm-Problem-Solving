@@ -3,16 +3,16 @@ from collections import defaultdict
 
 def _check(key, black_blocks, board) :
     for x, y in black_blocks[key]:
-        print(key, x, y)
-        for i in range(len(board)-y):
+        for i in range(x+1):
             if board[i][y] != 0:
                 return False
     return True
 
 
-def _remove(key, blocks, board):
-    for x, y in blocks[key]:
-        board[x][y] = 0
+def _remove(keys, blocks, board):
+    for key in keys:
+        for x, y in blocks[key]:
+            board[x][y] = 0
     return board
     
     
@@ -34,15 +34,22 @@ def solution(board):
     black_blocks = defaultdict(set)
     for key in blocks.keys():
         black_blocks[key].update(rectangles[key] - blocks[key])
-
+    
     answer = 0
-    _answer = 0
-    for key in blocks.keys():
-        if _check(key, black_blocks, board):
-            print(key, _check(key, black_blocks, board))
+    while True:
+        can_remove = [key for key in blocks.keys() if _check(key, black_blocks, board)]
+        if not can_remove:
+            break
+            
+        board = _remove(can_remove, blocks, board)
+        for key in can_remove:
+            del blocks[key]
+            del rectangles[key]
+            del black_blocks[key]
+        
+        answer += len(can_remove)
 
-
-    return
+    return answer
 
 
 if __name__ == "__main__":
