@@ -204,3 +204,6 @@ Progammers/연습.py
 test.py
 *.xml
 
+*.iml
+*.xml
+test.py
