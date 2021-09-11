@@ -4,11 +4,12 @@ from collections import Counter
 def solution(a):
     if len(a) <= 1:
         return 0
-    
-    answer = 0
+
     cnt_n = Counter(a).most_common()
     cnt_n = {n: cnt for n, cnt in cnt_n}
-    
+    print(cnt_n)
+
+    answer = 0
     for n in cnt_n:
         if cnt_n[n] * 2 <= answer:
             continue
