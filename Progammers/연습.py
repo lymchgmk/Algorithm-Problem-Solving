@@ -1,50 +1,55 @@
-import heapq
-from copy import deepcopy
+def points(apeach, ryan):
+    a, r = 0, 0
+    for i in range(11):
+        if apeach[i] == ryan[i] == 0:
+            continue
+        else:
+            if apeach[i] >= ryan[i]:
+                a += 10 - i
+            else:
+                r += 10 - i
+    return a, r
 
 
-def solution(n, start, end, roads, traps):
-    # key에서 나가고, 들어오고
-    go_out = {key: {} for key in range(1, n + 1)}
-    come_in = {key: {} for key in range(1, n + 1)}
-    for s, e, d in roads:
-        go_out[s][e] = d
-        come_in[e][s] = d
+def solution(n, info):
+    stuff = [[0, 0, -1]]
+    for i in range(11):
+        if info[i]:
+            stuff.append([10-i, info[i] + 1, 2*(10-i)])
+        else:
+            stuff.append([10-i, info[i] + 1, 10 - i])
+    stuff.sort(key=lambda x: (x[1], -x[2], x[0]))
 
-    INF = float('inf')
-    dist = [INF] * (n + 1)
-    dist[start] = 0
-    visited = [False] * (n+1)
-    heap_queue = []
-    # 처음에
-    heapq.heappush(heap_queue, [0, start, go_out, come_in])
-    while heap_queue:
-        curr_dist, curr_node, curr_go_out, curr_come_in = heapq.heappop(heap_queue)
-        visited[curr_node] = True
-        for post_node, post_dist in curr_go_out[curr_node].items():
-            if not visited[post_node] and dist[post_node] > curr_dist + post_dist:
-                dist[post_node] = curr_dist + post_dist
-                
-                post_go_out, post_come_in = deepcopy(curr_go_out), deepcopy(curr_come_in)
-                if post_node in traps:
-                    for target, d in post_go_out[post_node].items():
-                        post_go_out[target][post_node] = d
+    knapsack = [[[0, []] for _ in range(n + 1)] for _ in range(12)]
+    for i in range(1, 12):
+        for j in range(1, n+1):
+            target_num, weight, value = stuff[i]
+            if j < weight:
+                knapsack[i][j] = knapsack[i - 1][j]
+            else:
+                if value + knapsack[i - 1][j - weight][0] <= knapsack[i - 1][j][0]:
+                    knapsack[i][j] = knapsack[i - 1][j]
+                else:
+                    knapsack[i][j][0] = value + knapsack[i - 1][j - weight][0]
+                    knapsack[i][j][1] = knapsack[i - 1][j - weight][1] + [target_num]*weight
 
-                    for target, d in post_come_in[post_node].items():
-                        post_come_in[target][post_node] = d
+    ryan = [0]*11
+    for i in knapsack[-1][-1][-1]:
+        ryan[10-i] += 1
 
-                    post_go_out[post_node], post_come_in[post_node] = post_come_in[post_node], post_go_out[post_node]
-                heapq.heappush(heap_queue, [dist[post_node], post_node, post_go_out, post_come_in])
-            print(curr_node, post_node, dist)
-            print(post_go_out)
-            print(post_come_in)
-            print()
-
-    return dist
+    apeach_points, ryan_points = points(info, ryan)
+    if apeach_points >= ryan_points:
+        return [-1]
+    else:
+        ryan[10] += n - sum(ryan)
+        return ryan
 
 
-n = 4
-start = 1
-end = 4
-roads = [[1, 2, 1], [3, 2, 1], [2, 4, 1]]
-traps = [2, 3]
-print(solution(n, start, end, roads, traps))  # 5
+
+n = 5
+info = [2,1,1,1,0,0,0,0,0,0,0]
+print(solution(n, info))
+
+# n = 9
+# info = [0,0,1,2,0,1,1,1,1,1,1]
+# print(solution(n, info))
