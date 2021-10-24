@@ -19,16 +19,15 @@ def solution(n, wires):
         tree[v1].append(v2)
         tree[v2].append(v1)
 
-    result = n
-    for root in range(1, n+1):
-        for cand in tree[root]:
-            tree[root].remove(cand)
-            tree[cand].remove(root)
-            cnt_root = count_nodes(root, n, tree)
-            cnt_cand = count_nodes(cand, n, tree)
-            result = min(result, abs(cnt_root - cnt_cand))
-            tree[root].append(cand)
-            tree[cand].append(root)
+    result = n-1
+    for root, cand in wires:
+        tree[root].remove(cand)
+        tree[cand].remove(root)
+        cnt_root = count_nodes(root, n, tree)
+        cnt_cand = count_nodes(cand, n, tree)
+        result = min(result, abs(cnt_root - cnt_cand))
+        tree[root].append(cand)
+        tree[cand].append(root)
     return result
 
 
@@ -40,5 +39,5 @@ if __name__ == "__main__":
 
     # tc 2
     n = 4
-    wires = [[1, 2], [2, 3], [2, 4]]
+    wires = [[1, 2], [2, 3], [3, 4]]
     print(solution(n, wires))
