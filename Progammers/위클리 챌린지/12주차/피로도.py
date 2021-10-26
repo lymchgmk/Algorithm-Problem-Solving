@@ -1,22 +1,19 @@
-from collections import deque
+from itertools import permutations
 
 
 def solution(k, dungeons):
     L = len(dungeons)
-    visited = [False] * L
-    deq = deque()
-    deq.append([k, visited])
-    result = 0
-    while deq:
-        tmp_k, tmp_visited = deq.popleft()
-        for i in range(L):
-            req_k, cost = dungeons[i]
-            if not tmp_visited[i] and tmp_k >= req_k and tmp_k - cost >= 1:
-                tmp_visited[i] = True
-                deq.append([tmp_k - cost, tmp_visited])
+    answer = 0
+    for perms in permutations(dungeons, L):
+        tmp_k, cnt = k, 0
+        for req, cost in perms:
+            if tmp_k >= req and tmp_k >= cost:
+                cnt += 1
+                tmp_k -= cost
             else:
-                result = max(result, len(tmp_visited))
-    return result
+                break
+        answer = max(answer, cnt)
+    return answer
 
 
 if __name__ == "__main__":
