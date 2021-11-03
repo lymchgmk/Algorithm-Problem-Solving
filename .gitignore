@@ -207,3 +207,4 @@ test.py
 *.iml
 *.xml
 test.py
+/bin/
