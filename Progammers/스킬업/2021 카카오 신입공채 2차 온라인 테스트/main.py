@@ -1,62 +1,59 @@
 import json
 from pprint import pprint
-
-import requests
-
-
-BASE_URL = "https://kox947ka1a.execute-api.ap-northeast-2.amazonaws.com/prod/users"
-X_AUTH_TOKEN = "4287df13255bb21b19ea970587f9c982"
+import API
+from collections import Counter
 
 
-def start_API(PROBLEM_NUM):
-    START_URL = BASE_URL + "/start"
-    START_HEADER = {"X-Auth-Token": X_AUTH_TOKEN, "Content-Type": "application/json"}
-    START_PROBLEM = {"problem": PROBLEM_NUM}
-    response = requests.post(url=START_URL, headers=START_HEADER, data=json.dumps(START_PROBLEM))
-    print(f'START_API:', response.status_code)
-    print(f'START_API:', response.json())
-    print()
-    return response.json()["auth_key"]
+def set_auth_key(problem_num):
+    return API.start(problem_num)
+
+def make_map(problem_num, locations):
+    if problem_num == 1:
+        SIZE = 5
+    elif problem_num == 2:
+        SIZE = 60
+
+    MAP = [[[0, 0] for _ in range(SIZE)] for _ in range(SIZE)]
+
+    for location in locations:
+        id, cnt = location["id"], location["located_bikes_count"]
+        r, c = id // SIZE, id % SIZE
+        MAP[r][c][0] += cnt
+
+    for m in MAP:
+        print(m)
+
+    return MAP
 
 
-def locations_API(AUTH_KEY):
-    print(f'AUTH_KEY:', AUTH_KEY)
-    URL = BASE_URL + "/locations"
-    HEADERS = {"Authorization": AUTH_KEY, "Content-Type": "application/json"}
-
-    response = requests.get(url=URL, headers=HEADERS)
-    print(f'LOCATIONS_API:', response.status_code)
-    print(f'LOCATIONS_API:', response.json())
-    print()
-    return response.json()["locations"]
-
-
-def trucks_API(AUTH_KEY):
-    URL = BASE_URL + "/trucks"
-    HEADERS = {"Authorization": AUTH_KEY, "Content-Type": "application/json"}
-
-    response = requests.get(url=URL, headers=HEADERS)
-    print(f'TRUCKS_API:', response.status_code)
-    print(f'TRUCKS_API:', response.json())
-    print()
-    return response.json()["trucks"]
-
-
-def simulate_API(AUTH_KEY, commands):
-    URL = BASE_URL + "/simulate"
-    HEADERS = {"Authorization": AUTH_KEY, "Content-Type": "application/json"}
-    DATA = json.dumps({"commands": commands})
-
-    response = requests.put(url=URL, headers=HEADERS, data=DATA)
-    print(f'SIMULATE_API:', response.status_code)
-    print(f'SIMULATE_API:', response.json())
-    print()
-    return response.json()["trucks"]
+def make_commands():
+    pass
 
 
 if __name__ == "__main__":
-    AUTH_KEY = start_API(1)
-    locations = locations_API(AUTH_KEY)
-    trucks = trucks_API(AUTH_KEY)
-    commands = {"truck_id": 0, "command": [2, 5, 4, 1, 6]}
-    simulate_API(AUTH_KEY, commands)
+    problem_num = 1
+    AUTH_KEY = set_auth_key(problem_num)
+
+    for _ in range(720):
+        locations = API.locations(AUTH_KEY)
+        curr_map = make_map(problem_num, locations)
+        trucks = API.trucks(AUTH_KEY)
+        commands = [{"truck_id": 0, "command": [0, 0, 0, 0, 0]}]
+        response = API.simulate(AUTH_KEY, commands)
+        if response["status"] == "finished":
+            break
+
+    API.score(AUTH_KEY)
+
+    # with open("./Scenarios/problem2_day-1.json", "r") as f:
+    #     json_data = json.load(f)
+    #
+    # borrow_counter, return_counter = Counter(), Counter()
+    # for time in range(240):
+    #     for data in json_data[str(time)]:
+    #         borrow_id, return_id, ride_time = data
+    #         borrow_counter[borrow_id] += 1
+    #         return_counter[return_id] += 1
+    # print(borrow_counter.most_common(10))
+    # print(return_counter.most_common(10))
+
