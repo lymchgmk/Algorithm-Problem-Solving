@@ -46,9 +46,9 @@ def simulate(AUTH_KEY, commands):
     DATA = json.dumps({"commands": commands})
 
     response = requests.put(url=URL, headers=HEADERS, data=DATA)
-    print(f'SIMULATE_API:', response.status_code)
-    print(f'SIMULATE_API:', response.json())
-    print()
+    # print(f'SIMULATE_API:', response.status_code)
+    # print(f'SIMULATE_API:', response.json())
+    # print()
     return response.json()
 
 
