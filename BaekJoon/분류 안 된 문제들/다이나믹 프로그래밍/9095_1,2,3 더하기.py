@@ -18,4 +18,4 @@ if __name__ == "__main__":
     T = int(input())
     for _ in range(T):
         n = int(input())
-        print(n, solution(n))
+        print(solution(n))
