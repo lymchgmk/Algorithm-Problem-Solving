@@ -1,3 +1,6 @@
+import heapq
+
+
 V, E = map(int, input().split())
 adj = [[0]*V for _ in range(V)]
 
