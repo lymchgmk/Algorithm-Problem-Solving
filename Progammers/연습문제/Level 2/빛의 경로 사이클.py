@@ -2,42 +2,44 @@ dx = [1,0,-1,0]
 dy = [0,-1,0,1]
 
 def solution(grid):
-    global visited,n,m
-    n = len(grid)
-    m = len(grid[0])
-    answer = []
-    visited = [[[False]*4 for _ in range(m)] for _ in range(n)]
-    for sx in range(n):
-        for sy in range(m):
-            for d in range(4):
-                if not visited[sx][sy][d]:
-                    rst = simul(sx,sy,d,grid)
-                    if rst != 0:
-                        answer.append(rst)
-    answer.sort()
-    return answer
+    def beam(sr, sc, sd):
+        global visited
+        visited[sr][sc][sd] = True
+        nr, nc, nd = sr, sc, sd
+        cnt = 0
+        while True:
+            nr = (nr + dirs[nd][0]) % lr
+            nc = (nc + dirs[nd][1]) % lc
+            cnt += 1
 
-def simul(sx,sy,sd,grid):
-    global visited
-    x,y,d=sx,sy,sd
-    cnt = 0
-    visited[sx][sy][sd] = True
-    while True:
-        x = (x + dx[d]) % n
-        y = (y + dy[d]) % m
-        cnt += 1
-
-        if grid[x][y] == 'R':
-            d = (d+1)%4
-        elif grid[x][y] == 'L':
-            d = (d-1)%4
-        if visited[x][y][d]:
-            if (x,y,d) == (sx,sy,sd):
-                return cnt
+            if grid[nr][nc] == 'R':
+                nd = (nd + 1) % ldir
+            elif grid[nr][nc] == 'L':
+                nd = (nd - 1) % ldir
             else:
-                return 0
-        visited[x][y][d] = True
+                pass
 
+            if visited[nr][nc][nd]:
+                if (nr, nc, nd) == (sr, sc, sd):
+                    return cnt
+                else:
+                    return 0
+
+            visited[nr][nc][nd] = True
+
+    global visited
+    dirs = ((-1, 0), (0, 1), (1, 0), (0, -1))
+    lr, lc, ldir = len(grid), len(grid[0]), len(dirs)
+    answer = []
+    visited = [[[False]*ldir for _ in range(lc)] for _ in range(lr)]
+    for sr in range(lr):
+        for sc in range(lc):
+            for sd in range(ldir):
+                if not visited[sr][sc][sd]:
+                    cycle_len = beam(sr, sc, sd)
+                    if cycle_len != 0:
+                        answer.append(cycle_len)
+    return sorted(answer)
 
 
 if __name__ == "__main__":
