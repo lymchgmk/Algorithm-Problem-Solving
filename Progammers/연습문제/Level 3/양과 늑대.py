@@ -21,16 +21,19 @@ def solution(info, edges):
         stack = []
         start_idx, start_s_w = 0, {0: 1, 1: 0}
         start_cands = set()
-        start_cands.add(tree[start_idx].left)
-        start_cands.add(tree[start_idx].right)
+        start_left, start_right = tree[start_idx].left, tree[start_idx].right
+        if start_left:
+            start_cands.add(tree[start_idx].left)
+        if start_right:
+            start_cands.add(tree[start_idx].right)
         max_sheep = 1
         stack.append((start_idx, start_s_w, start_cands))
         while stack:
             curr_idx, curr_s_w, curr_cands = stack.pop()
             curr_left, curr_right = tree[curr_idx].left, tree[curr_idx].right
-            if curr_left is not None:
+            if curr_left:
                 curr_cands.add(curr_left)
-            if curr_right is not None:
+            if curr_right:
                 curr_cands.add(curr_right)
 
             for post_idx in curr_cands:
@@ -49,6 +52,10 @@ def solution(info, edges):
 
 
 if __name__ == "__main__":
-    info = [0,0,1,1,1,0,1,0,1,0,1,1]
-    edges = [[0,1],[1,2],[1,4],[0,8],[8,7],[9,10],[9,11],[4,3],[6,5],[4,6],[8,9]]
+    # info = [0,0,1,1,1,0,1,0,1,0,1,1]
+    # edges = [[0,1],[1,2],[1,4],[0,8],[8,7],[9,10],[9,11],[4,3],[6,5],[4,6],[8,9]]
+    # print(solution(info, edges))
+
+    info = [0,0]
+    edges = [[0,1]]
     print(solution(info, edges))
