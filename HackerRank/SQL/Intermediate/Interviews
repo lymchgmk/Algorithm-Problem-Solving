@@ -1,0 +1,18 @@
+SELECT CT.contest_id, CT.hacker_id, CT.name, SUM(SS.ts), SUM(SS.tas), SUM(SV.tv), SUM(SV.tuv)
+FROM Contests CT
+INNER JOIN Colleges CL ON CT.contest_id = CL.contest_id
+INNER JOIN Challenges CH ON CL.college_id = CH.college_id
+LEFT JOIN (
+    SELECT challenge_id, SUM(total_submissions) ts, SUM(total_accepted_submissions) tas
+    FROM Submission_Stats
+    GROUP BY challenge_id
+) AS SS ON CH.challenge_id = SS.challenge_id
+LEFT JOIN (
+    SELECT challenge_id, SUM(total_views) tv, SUM(total_unique_views) tuv
+    FROM View_Stats
+    GROUP BY challenge_id
+) AS SV ON CH.challenge_id = SV.challenge_id
+GROUP BY CT.contest_id, CT.hacker_id, CT.name
+HAVING
+    SUM(SS.ts) != 0 OR SUM(SS.tas) != 0 OR SUM(SV.tv) != 0 OR SUM(SV.tuv) != 0
+ORDER BY CT.contest_id;

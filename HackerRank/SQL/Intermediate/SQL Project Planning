@@ -1,0 +1,14 @@
+SELECT Start_Date, MIN(End_Date)
+FROM (
+    SELECT Start_Date
+    FROM Projects
+    WHERE Start_Date NOT IN (SELECT End_Date FROM Projects)
+    ) AS T1,
+    (
+    SELECT End_date
+    FROM Projects
+    WHERE End_date NOT IN (SELECT Start_date FROM Projects)
+    ) AS T2
+where Start_date < End_date
+GROUP BY Start_date
+ORDER BY DATEDIFF(MIN(End_date), Start_date) ASC, Start_date ASC
