@@ -1,46 +1,39 @@
 import sys
+from collections import deque
 sys.stdin = open('18352_특정 거리의 도시 찾기.txt', 'rt')
-from collections import defaultdict
-import heapq
-
-
-def dijkstra(start, _graph):
-    dists = {node: float('inf') for node in range(1, N+1)}
-    dists[start] = 0
-    q = []
-    heapq.heappush(q, [dists[start], start])
-    while q:
-        curr_dist, curr_dest = heapq.heappop(q)
-
-        if dists[curr_dest] < curr_dist:
-            continue
-
-        for post_dest, post_dist in _graph[curr_dest].items():
-            _dist = curr_dist + post_dist
-            if _dist < dists[post_dest]:
-                dists[post_dest] = _dist
-                heapq.heappush(q, [_dist, post_dest])
-    return dists
 
 
 def solution(N, M, K, X, graph):
-    dists_res = dijkstra(X, graph)
-    ans = []
-    for city, dist in dists_res.items():
-        if dist == K:
-            ans.append(city)
-    if ans:
-        ans.sort()
-        for a in ans:
-            print(a)
-    else:
+    def bfs(start, K):
+        dists, visited = [0] * (N+1), [False] * (N+1)
+        dists[start], visited[start] = 0, True
+        dq = deque([start])
+        res = []
+        while dq:
+            curr_city = dq.popleft()
+            for post_city in graph[curr_city]:
+                if not visited[post_city]:
+                    visited[post_city] = True
+                    dists[post_city] = dists[curr_city] + 1
+                    dq.append(post_city)
+                    if dists[post_city] == K:
+                        res.append(post_city)
+        return res
+
+    cities = bfs(X, K)
+    cities.sort()
+    if not cities:
         print(-1)
+    else:
+        for city in cities:
+            print(city)
 
 
 if __name__ == "__main__":
+    input = sys.stdin.readline
     N, M, K, X = map(int, input().split())
-    graph = {i: defaultdict(dict) for i in range(1, N+1)}
+    graph = {i: [] for i in range(1, N+1)}
     for _ in range(M):
         A, B = map(int, input().split())
-        graph[A][B] = 1
+        graph[A].append(B)
     solution(N, M, K, X, graph)
