@@ -5,7 +5,6 @@ sys.stdin = open("5670_휴대폰 자판.txt", "rt")
 
 class TrieNode:
     def __init__(self):
-        self.word = False
         self.children = defaultdict(TrieNode)
         self.size = 0
 
@@ -20,7 +19,6 @@ class Trie:
             for char in word:
                 node = node.children[char]
                 node.size += 1
-            node.word = True
 
     def count_buttons(self, word):
         curr_node = self.root
