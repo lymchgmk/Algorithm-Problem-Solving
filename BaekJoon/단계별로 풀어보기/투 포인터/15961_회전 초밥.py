@@ -1,16 +1,21 @@
 import sys
-from collections import deque
+from collections import Counter
 sys.stdin = open("15961_회전 초밥.txt", 'rt')
 
 
 def solution(N, D, K, C, sushi):
     answer = 0
-    sushi = sushi + sushi[:K-1]
-    left, right = 0, K
-    window = deque(sushi[left: right])
-    print(sushi)
-    for i in range(N):
-        print(sushi[i: i+K])
+    sushi += sushi[:K-1]
+    cntr = Counter(sushi[:K])
+    cntr[C] += 1
+    for left in range(N-1):
+        right = left + K
+        cntr[sushi[left]] -= 1
+        if cntr[sushi[left]] == 0:
+            del cntr[sushi[left]]
+        cntr[sushi[right]] += 1
+        answer = max(answer, len(cntr))
+    return answer
 
 
 if __name__ == "__main__":
