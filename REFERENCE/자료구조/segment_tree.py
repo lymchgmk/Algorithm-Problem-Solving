@@ -10,7 +10,6 @@ class SegTree:
         
         return self.tree[node]
 
-    
     def __init__(self, N, A):
         self.A = A
         # 기본적인 트리 크기 정해 줌
