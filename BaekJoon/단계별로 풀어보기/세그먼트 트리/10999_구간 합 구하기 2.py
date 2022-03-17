@@ -1,6 +1,6 @@
 import sys
 from math import ceil, log2
-sys.stdin = open("10999_구간 합 구하기.txt", "rt")
+sys.stdin = open("10999_구간 합 구하기 2.txt", "rt")
 
 
 class SegmentTree:
