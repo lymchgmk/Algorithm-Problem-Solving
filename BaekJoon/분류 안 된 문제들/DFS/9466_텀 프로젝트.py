@@ -3,31 +3,35 @@ sys.stdin = open("9466_텀 프로젝트.txt", 'rt')
 
 
 def solution(n, s):
-    def check_group(start):
-        nonlocal is_grouped, group_failed
-        group = set()
-        curr = start
-        while curr not in group:
-            if is_grouped[curr] or group_failed[curr]:
-                return
-            group.add(curr)
-            curr = s[curr]
+    def dfs(node):
+        nonlocal visited
+        stack = []
+        check = set()
+        while not visited[node]:
+            stack.append(node)
+            check.add(node)
+            visited[node] = True
+            node = s[node]
+        return node, stack, check
 
-        if start == curr:
-            for student in group:
-                is_grouped[student] = True
-        else:
-            group.remove(curr)
-            for student in group:
-                group_failed[student] = True
+    def grouped_check(node, stack, check):
+        nonlocal grouped, answer
+        if node in check:
+            while stack:
+                curr = stack.pop()
+                if not grouped[curr]:
+                    grouped[curr] = True
+                    answer -= 1
+                if curr == node:
+                    break
 
-    is_grouped = [False] * n
-    group_failed = [False] * n
-    for start in range(n):
-        if not is_grouped[start]:
-            check_group(start)
-
-    print(n - sum(is_grouped))
+    visited, grouped = [False] * n, [False] * n
+    answer = n
+    for i in range(n):
+        if not visited[i]:
+            node, stack, check = dfs(i)
+            grouped_check(node, stack, check)
+    print(answer)
 
 
 if __name__ == "__main__":
