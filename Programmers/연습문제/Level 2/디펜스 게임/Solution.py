@@ -1,22 +1,22 @@
+import heapq
+
+
 def solution(n, k, enemy):
-    left, right = 0, enemy.len
+    queue = []
+    for round in range(len(enemy)):
+        heapq.heappush(queue, enemy[round])
 
-    while left < right:
-        mid = (left + right) / 2
+        if len(queue) > k:
+            n -= heapq.heappop(queue)
 
-        currEnemy = enemy[:mid+1]
-        if canDefense(n, k, currEnemy):
-            left = mid + 1
-        else:
-            right = mid
+        if n < 0:
+            return round
 
-    return left
-
-def canDefense(n, k, currEnemy):
-    import heapq
+    return len(enemy)
 
 
-
-n = 7
-k = 3
-print(solution(n, k, enemy))
+if __name__ == "__main__":
+    n = 7
+    k = 3
+    enemy = [4, 2, 4, 5, 3, 3, 1]
+    print(solution(n, k, enemy))
