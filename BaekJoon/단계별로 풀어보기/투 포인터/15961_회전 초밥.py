@@ -1,4 +1,4 @@
-import sys
+.import sys
 from collections import Counter
 sys.stdin = open("15961_회전 초밥.txt", 'rt')
 
