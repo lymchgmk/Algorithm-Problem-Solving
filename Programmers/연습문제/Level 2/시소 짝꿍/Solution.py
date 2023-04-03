@@ -2,12 +2,14 @@ from collections import defaultdict
 
 
 def solution(weights):
-    check_dict = defaultdict(lambda: 0)
-    for weight in weights:
-        for multiply in (1, 2, 3, 4):
-            check_dict[weight * multiply] += 1
+    answer = 0
+    info = defaultdict(int)
 
-    print(check_dict)
+    for w in weights:
+        answer += info[w] + info[w*2] + info[w/2] + info[(w*2)/3] + info[(w*3)/2] + info[(w*4)/3] + info[(w*3)/4]
+        info[w] += 1
+        
+    return answer
 
 
 if __name__ == "__main__":
