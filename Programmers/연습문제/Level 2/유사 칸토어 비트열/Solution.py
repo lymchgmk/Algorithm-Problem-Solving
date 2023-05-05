@@ -12,12 +12,18 @@ def count_1(idx):
 
     base = 5 ** power
     section, remainder = divmod(idx, base)
-    if section == 1:
-        return section * (4 ** power) + count_1(remainder)
+    if section == 0:
+        return count_1(remainder)
+    elif section == 1:
+        return (4 ** power) + count_1(remainder)
     elif section == 2:
-        return section * (4 ** power)
-    else:
-        return (section - 1) * (4 ** power) + count_1(remainder)
+        return 2 * (4 ** power)
+    elif section == 3:
+        return 2 * (4 ** power) + count_1(remainder)
+    elif section == 4:
+        return 3 * (4 ** power) + count_1(remainder)
+    else: # section == 5
+        return 4 * (4 ** power)
 
 
 if __name__ == "__main__":

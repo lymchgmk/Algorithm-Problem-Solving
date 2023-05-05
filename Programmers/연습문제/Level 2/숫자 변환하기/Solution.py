@@ -1,22 +1,20 @@
+MAX = 1_000_000
+INF = float('inf')
+
+
 def solution(x, y, n):
-    MAX = 1_000_000
-    INF = float("inf")
     dp = [INF] * (MAX + 1)
     dp[x] = 0
 
     for i in range(x, y):
-
         if dp[y] != INF:
             return dp[y]
 
-        n1, n2, n3 = i + n, 2 * i, 3 * i
+        for new_n in (i + n, 2 * i, 3 * i):
+            if MAX < new_n:
+                continue
 
-        if 0 <= n1 <= MAX and dp[i] + 1 < dp[n1]:
-            dp[n1] = dp[i] + 1
-        if 0 <= n2 <= MAX and dp[i] + 1 < dp[n2]:
-            dp[n2] = dp[i] + 1
-        if 0 <= n3 <= MAX and dp[i] + 1 < dp[n3]:
-            dp[n3] = dp[i] + 1
+            dp[new_n] = min(dp[new_n], dp[i] + 1)
 
     return dp[y] if dp[y] != INF else -1
 

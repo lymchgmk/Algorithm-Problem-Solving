@@ -1,11 +1,10 @@
 def solution(cap, n, deliveries, pickups):
-    answer = 0
-
     while deliveries and not deliveries[-1]:
         deliveries.pop()
     while pickups and not pickups[-1]:
         pickups.pop()
 
+    answer = 0
     while deliveries or pickups:
         answer += max(len(deliveries), len(pickups)) * 2
 
