@@ -1,27 +1,24 @@
-from collections import defaultdict
+from math import sqrt
 
 
 def solution(e, starts):
-    dp = [0] * (e + 1)
+    dp_count = [0] * (e + 1)
+    for div in range(2, e + 1):
+        for q in range(1, min(e // div + 1, div)):
+            dp_count[div * q] += 2
+    for root in range(1, int(sqrt(e))+1):
+        dp_count[root ** 2] += 1
 
-    starts.sort()
+    dp_div = [0] * (e + 1)
+    max_count = 0
+    for idx in range(e, 0, -1):
+        if max_count <= dp_count[idx]:
+            max_count = dp_count[idx]
+            dp_div[idx] = idx
+        else:
+            dp_div[idx] = dp_div[idx + 1]
 
-    for s in starts:
-        print(s, get_count(s))
-
-def get_count(num):
-    count = 0
-
-    for div in range(1, int(num ** 0.5) + 1):
-        q, r = divmod(num, div)
-
-        if r == 0:
-            if div == q:
-                count += 1
-            else:
-                count += 2
-
-    return count
+    return [dp_div[start] for start in starts]
 
 
 if __name__ == "__main__":

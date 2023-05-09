@@ -1,41 +1,28 @@
 def solution(scores):
-    sums = list(map(lambda x: sum(x), scores))
-    wanho = sums[0]
-    sorted_sums = sorted(sums[1:], reverse=True)
-    min_sum = sorted_sums[-1]
-
-    if wanho == min_sum:
-        return -1
-
-    # count = 1
-    # for s_sum in sorted_sums:
-    #     if s_sum <= wanho:
-    #         return count
-    #
-    #     count += 1
-
-    tmp = [5, 5, 4, 4, 4, 1, 1, 1]
-    tmp_ans = [1, 1, 3, 3, 3, 7, 7, 7]
-    wanho = 4 # 3
-
-    check = 0
+    wanho, scores = scores[0], scores[1:]
+    wanho_wa, wanho_pr = wanho
+    threshold_pr = 0
     rank = 1
-    count = 0
-    for s_sum in tmp:
-        if s_sum > wanho:
-            count += 1
-            print(rank)
-        elif s_sum == wanho:
-            return rank
-        elif s_sum < wanho:
+    for work_attitude, peer_review in sorted(scores, key=lambda s: (-s[0], s[1])):
+        if wanho_wa < work_attitude and wanho_pr < peer_review:
+            return -1
 
+        if threshold_pr <= peer_review:
+            threshold_pr = peer_review
 
+            if wanho_wa + wanho_pr < work_attitude + peer_review:
+                rank += 1
 
-    return -1
+    return rank
 
 
 if __name__ == "__main__":
-    scores = [[2,2],[1,4],[3,2],[3,2],[2,1]]
-    result = 4
+    # scores = [[2, 2],[1,4],[3,2],[3,2],[2,2]]
+    # result = 4
+    # answer = solution(scores)
+    # print([result == answer], answer)
+
+    scores = [[5, 0], [5, 5], [4, 4], [3, 3]]
+    result = 2
     answer = solution(scores)
-    print([result == answer], answer)
+    print(answer == result, answer)
