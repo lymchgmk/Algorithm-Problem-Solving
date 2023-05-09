@@ -10,9 +10,6 @@ def solution(arr):
     N = len(nums)
     dp_max = [[NEG_INF] * N for _ in range(N)]
     dp_min = [[POS_INF] * N for _ in range(N)]
-    for i in range(N):
-        dp_max[i][i] = int(nums[i])
-        dp_min[i][i] = int(nums[i])
 
     for scope in range(N):
         for start in range(N - scope):
