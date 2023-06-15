@@ -20,6 +20,8 @@ for _ in range(V):
     for i in range(1, len(E), 2):
         tree[E[0]][E[i]] = E[i+1]
 
+    print(E)
+
 longest = float('-inf')
 for start in range(1, V+1):
     deq = collections.deque([start])
