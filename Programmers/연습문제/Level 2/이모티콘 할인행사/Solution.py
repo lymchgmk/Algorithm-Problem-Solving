@@ -3,7 +3,6 @@ from itertools import product
 
 def solution(users, emoticons):
     discounts = (10, 20, 30, 40)
-    
     result = [0, 0]
     for _discounts in product(discounts, repeat=len(emoticons)):
         curr_result = check(users, emoticons, _discounts)
@@ -14,19 +13,19 @@ def solution(users, emoticons):
 
 
 def check(users, emoticons, discounts):
-    result = [0, 0]
-    for threshold, budget in users:
+    subscribe = purchased_emoticons = 0
+    for discount_threshold, budget in users:
         purchased = 0
         for emoticon, discount in zip(emoticons, discounts):
-            if threshold <= discount:
+            if discount_threshold <= discount:
                 purchased += emoticon * (100 - discount) // 100
 
         if budget <= purchased:
-            result[0] += 1
+            subscribe += 1
         else:
-            result[1] += purchased
+            purchased_emoticons += purchased
 
-    return result
+    return [subscribe, purchased_emoticons]
 
 
 if __name__ == "__main__":

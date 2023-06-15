@@ -1,28 +1,21 @@
 def solution(sequence, k):
-    start = end = 0
     partial_sum = 0
-    answer = [0, len(sequence) - 1]
-
-    while start < len(sequence) and end < len(sequence):
-        while partial_sum < k:
-            end += 1
-            partial_sum += sequence[end]
-
-        if partial_sum == k:
-            print(777, start, end)
-            start = end
-            partial_sum = sequence[start]
-
-        while k < partial_sum:
-            partial_sum -= sequence[start]
-            start += 1
+    right = 0
+    result = []
+    for left in range(len(sequence)):
+        while right < len(sequence) and partial_sum < k:
+            partial_sum += sequence[right]
+            right += 1
 
         if partial_sum == k:
-            print(778, start, end)
-            start = end
-            partial_sum = sequence[start]
+            if not result:
+                result = [left, right - 1]
+            else:
+                result = result if result[1] - result[0] <= (right - 1) - left else [left, right - 1]
 
-    return answer
+        partial_sum -= sequence[left]
+
+    return result
 
 
 if __name__ == "__main__":
