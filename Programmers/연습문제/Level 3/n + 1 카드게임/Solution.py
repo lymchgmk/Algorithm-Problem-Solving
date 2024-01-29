@@ -5,6 +5,22 @@ def solution(coin, cards):
     shortages = {card: TARGET - card for card in cards}
     deck = cards[:SIZE // 3]
 
+    while stack:
+        curu_deck, curr_round, curr_visited, curr_coin
+
+        if () {
+            max_round = max()
+        }
+
+        #1
+
+        #2 -1
+        #2- 2
+
+        #3
+
+    return max_round
+
     print(deck)
     print(cards)
     print(shortages)
