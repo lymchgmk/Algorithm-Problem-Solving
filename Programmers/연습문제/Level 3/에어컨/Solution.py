@@ -7,7 +7,7 @@ def solution(temperature, t1, t2, a, b, onboard):
     outside_temp = temperature + OFFSET
     passenger_min_temp, passenger_max_temp, change_power, keep_power = t1 + OFFSET, t2 + OFFSET, a, b
     MAX_TIME = len(onboard)
-    dp = [[INF] * (MAX_TEMP + 3) for _ in range(MAX_TIME + 1)]
+    dp = [[INF] * (MAX_TEMP + 2) for _ in range(MAX_TIME + 1)]
     dp[0][outside_temp] = 0
 
     for curr_time in range(0, MAX_TIME):
