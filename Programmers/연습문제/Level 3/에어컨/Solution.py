@@ -1,28 +1,32 @@
+OFFSET = 10 + 1
+MIN_TEMP, MAX_TEMP = -10 + OFFSET, 40 + OFFSET + 1000 // 2
+INF = float('inf')
+
+
 def solution(temperature, t1, t2, a, b, onboard):
-    OFFSET = 11
-    temperature, t1, t2 = temperature + OFFSET, t1 + OFFSET, t2 + OFFSET
+    outside_temp = temperature + OFFSET
+    passenger_min_temp, passenger_max_temp, change_power, keep_power = t1 + OFFSET, t2 + OFFSET, a, b
+    MAX_TIME = len(onboard)
+    dp = [[INF] * (MAX_TEMP + 3) for _ in range(MAX_TIME + 1)]
+    dp[0][outside_temp] = 0
 
-    MAX_TEMPERATURE = 40 + OFFSET
-    TIMES = len(onboard)
-    INF = float('inf')
-    dp = [[INF] * (MAX_TEMPERATURE + 1) for _ in range(TIMES)]
-    dp[0][temperature] = 0
+    for curr_time in range(0, MAX_TIME):
+        post_time = curr_time + 1
+        inside_temp_range = range(1, MAX_TEMP + 1) if not is_passenger(post_time, onboard) else range(passenger_min_temp, passenger_max_temp + 1)
+        for post_inside_temp in inside_temp_range:
+            dp[post_time][post_inside_temp] = min(
+                dp[curr_time][post_inside_temp - 1] if post_inside_temp - 1 < outside_temp else INF,
+                dp[curr_time][post_inside_temp] if post_inside_temp == outside_temp else INF,
+                dp[curr_time][post_inside_temp + 1] if post_inside_temp + 1 > outside_temp else INF,
+                dp[curr_time][post_inside_temp] + keep_power,
+                dp[curr_time][post_inside_temp - 1] + change_power, dp[curr_time][post_inside_temp + 1] + change_power
+            )
 
-    for curr_time in range(1, TIMES):
-        for curr_temp in range(1, MAX_TEMPERATURE):
-            if curr_temp == temperature:
-                dp[curr_time][curr_temp] = dp[curr_time - 1][curr_temp]
-            else:
-                dp[curr_time][curr_temp] = min(
-                    dp[curr_time - 1][curr_temp - 1] + a,
-                    dp[curr_time - 1][curr_temp + 1] + a,
-                    dp[curr_time - 1][curr_temp] + b
-                )
+    return min(dp[-1])
 
-    for row in dp:
-        print(row)
 
-    print(dp[-1][t1: t2+1])
+def is_passenger(time, onboard):
+    return onboard[time - 1] == 1
 
 
 if __name__ == "__main__":
