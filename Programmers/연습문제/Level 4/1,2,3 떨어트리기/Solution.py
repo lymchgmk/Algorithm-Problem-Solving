@@ -7,7 +7,7 @@ def solution(edges, target):
     card_orders = {i: [] for i in range(ROOT_NODE, MAX_NODE + 1)}
     for card_index in range(sum(target)):
         tree, card_orders = hand_out_card(card_index, tree, card_orders)
-        if can_make_sum(card_orders, target):
+        if can_make_target(card_orders, target):
             return calc_result(card_orders, target)
 
     return [-1]
@@ -22,15 +22,6 @@ def make_tree(edges, root_node, max_node):
         tree[node] = deque(sorted(child))
 
     return tree
-
-
-def find_leaf_nodes(tree):
-    leaf_nodes = []
-    for node, child in tree.items():
-        if len(child) == 0:
-            leaf_nodes.append(node)
-
-    return leaf_nodes
 
 
 def hand_out_card(card_index, tree, card_orders, root_node=0):
@@ -48,7 +39,7 @@ def hand_out_card(card_index, tree, card_orders, root_node=0):
         tree[curr_node].rotate(-1)
 
 
-def can_make_sum(card_orders, target):
+def can_make_target(card_orders, target):
     for node, card_order in card_orders.items():
         if not (len(card_order) <= target[node] <= len(card_order) * 3):
             return False
@@ -75,14 +66,10 @@ def create_list_with_max_3(number, length):
     index = length - 1
 
     while 0 < number:
-        if 2 <= number:
-            number -= 2
-            result[index] += 2
-            index -= 1
-        else:
-            number -= 1
-            result[index] += 1
-            index -= 1
+        _add = 2 if 2 <= number else 1
+        number -= _add
+        result[index] += _add
+        index -= 1
 
     return result
 
