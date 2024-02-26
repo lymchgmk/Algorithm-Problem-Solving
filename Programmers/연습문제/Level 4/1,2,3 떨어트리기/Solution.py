@@ -75,8 +75,12 @@ def create_list_with_max_3(number, length):
 
 
 if __name__ == "__main__":
-    edges = [[2, 4], [1, 2], [6, 8], [1, 3], [5, 7], [2, 5], [3, 6], [6, 10], [6, 9]]
-    target = [0, 0, 0, 3, 0, 0, 5, 1, 2, 3]
-    result = [1, 1, 2, 2, 2, 3, 3]
+    # edges = [[2, 4], [1, 2], [6, 8], [1, 3], [5, 7], [2, 5], [3, 6], [6, 10], [6, 9]]
+    # target = [0, 0, 0, 3, 0, 0, 5, 1, 2, 3]
+    # result = [1, 1, 2, 2, 2, 3, 3]
+
+    edges = [[1, 2], [1, 3]]
+    target = [0, 7, 3]
+    result = [1, 1, 3, 2, 3]
     answer = solution(edges, target)
     print(answer == result, answer)

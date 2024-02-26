@@ -48,3 +48,10 @@ def calc_waiting_time(mentos, mentees):
         heappush(waiting_queue[consulting_type], (end_time, start_time))
 
     return waiting_time
+
+
+if __name__ == "__main__":
+    k = 3
+    n = 6
+    reqs = [[5, 55, 2], [10, 90, 2], [20, 40, 2], [50, 45, 2], [100, 50, 2]]
+    print(solution(k, n, reqs))
